@@ -37,7 +37,7 @@ const Autocomplete = () => {
       <div className="relative w-3/5 hidden  md:flex flex-col" ref={autoRef}>
         <div
           className={` ${
-            show == false ? "bg-[#ebebeb]" : "bg-white"
+            show == false ? "bg-[#f3f3f3]" : "bg-white"
           } flex w-full items-center  rounded-lg z-40`}
         >
           <div className="pl-2">

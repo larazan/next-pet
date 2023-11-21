@@ -8,7 +8,7 @@ import Link from "next/link";
         aria-label="Site Footer"
         className="bg-[#073d30] lg:grid lg:grid-cols-5"
       >
-        <div className="px-4 py-8 sm:px-6 lg:col-span-3 lg:px-8">
+        <div className="mx-auto w-11/12 px-4 py-8 sm:px-6 lg:col-span-3 lg:px-8">
           <div className="">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
               <div className="flex w-full justify-center md:justify-start text-center md:text-left">

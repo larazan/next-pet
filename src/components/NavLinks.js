@@ -19,7 +19,7 @@ const NavLinks = () => {
         <div className="z-30">
           <div className="px-0 text-left  group ">
             <h1
-              className="py-7  flex cursor-pointer justify-between items-center md:pr-0 pr-5 group text-md font-semibold font-mabrybold text-gray-900"
+              className="py-7  flex cursor-pointer justify-between items-center md:pr-0 pr-5 group text-md font-bold text-[#073d30]"
               onClick={() => {
                 setHeading("");
                 setSubHeading("");

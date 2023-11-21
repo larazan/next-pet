@@ -46,9 +46,8 @@ const ArticleHome = () => {
                     <div>
                       {blogs.map((data, index) => {
                         return (
-                          <Link
+                          <div
                             className="text-tundora no-underline"
-                            href="/"
                             key={index}
                           >
                             <div className="my-[1em] mx-[0em] flex md:items-center w-full bg-transparent leading-[1.25em]">
@@ -80,7 +79,7 @@ const ArticleHome = () => {
                               </div>
                             </div>
                             <div className="h-px bg-mercury"></div>
-                          </Link>
+                          </div>
                         );
                       })}
                     </div>

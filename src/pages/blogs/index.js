@@ -125,25 +125,23 @@ export default function Blogs() {
                     <div>
                       {blogs.map((data, index) => {
                         return (
-                          <Link
-                            className="text-tundora no-underline"
-                            href="/"
-                            key={index}
+                          <div
+                            className="text-tundora no-underline"   
+                            key={index}                         
                           >
                             <div className="my-[1em] mx-[0em] flex md:items-center w-full bg-transparent leading-[1.25em]">
-                              <Link
-                                href={
-                                  ""
-                                }
+                              <div
                                 className="m-0 mr-2 md:mr-5 flex aspect-[16/9] md:aspect-[16/9] h-fit flex-1 items-center justify-center"
                               >
+                                <Link href={""} >
                                 <Image
                                   alt=""
                                   src={data.image}
                                   className="h-full w-full rounded object-cover"
                                   style={{ color: "transparent" }}
                                 />
-                              </Link>
+                                </Link>
+                              </div>
                               <div className="flex w-2/3 md:max-w-[55%] flex-1 flex-col space-y-1 md:space-y-2">
                                 <Link
                                   href={
@@ -163,7 +161,7 @@ export default function Blogs() {
                               </div>
                             </div>
                             <div className="h-px bg-mercury"></div>
-                          </Link>
+                          </div>
                         );
                       })}
 

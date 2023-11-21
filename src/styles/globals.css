@@ -10,21 +10,127 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+.input-select {
+  border-width: 1px;
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
 }
 
-* {
-  box-sizing: border-box;
+.input-select {
+  --tw-bg-opacity: 1;
+  --tw-shadow: 3px 3px 0 #002f3c;
+  --tw-shadow-colored: 3px 3px 0 var(--tw-shadow-color);
+  -webkit-appearance: none;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
+  background-image: url('../assets/chev-down.svg');
+  background-position: 96% 50%;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  display: block;
+  padding: 0.5rem;
+  position: relative;
+  width: 100%;
+  z-index: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 10;
 }
+menu, ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination .active .page-link {
+  --tw-bg-opacity: 1;
+  --tw-shadow: 0 3px 1px #faf77d;
+  --tw-shadow-colored: 0 3px 1px var(--tw-shadow-color);
+  background-color: rgb(250 247 125/var(--tw-bg-opacity));
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+.pagination .page-link {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
+  border-width: 1px;
+  border: 1px solid #000;
+  display: block;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.pagination .page-item a:hover {
+  background-color: #b8fff3;
+}
+
+.markdown {
+  --tw-text-opacity: 1;
+  background-color: transparent;
+  color: rgb(25 26 27/var(--tw-text-opacity));
+  line-height: 1.625;
+}
+
+.markdown-blog p {
+  font-size: 21px;
+  line-height: 32px;
+}
+.markdown-blog p {
+  color: #3e3e3e;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.markdown-blog h2 {
+  font-size: 36px;
+  line-height: 56px;
+}
+.markdown-blog h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.markdown-blog h3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.markdown-blog h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.markdown-blog blockquote {
+  position: relative;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.text-tundora {
+  --tw-text-opacity: 1!important;
+  color: rgb(74 74 74/var(--tw-text-opacity))!important;
+}
+
+.bg-mercury {
+  --tw-bg-opacity: 1!important;
+}
+.bg-mercury {
+  background-color: rgb(232 232 232/var(--tw-bg-opacity))!important;
+}
+.h-px {
+  height: 1px!important;
+}
+

@@ -78,12 +78,10 @@ export default function Faqs() {
                 
                 <section className="w-full mx-auto mt-6 md:mt-6 px-5 text-[#073d30]">
                   <h5 className="font-semibold md:font-bold text-2xl md:text-3xl text-center ">
-                    Frequently asked questions
+                    FAQ
                   </h5>
-                  <p className="mt-3 font-normal text-lg text-center ">
-                    Browse through the most frequently asked questions.
-                  </p>
-                  <dl className="w-full mt-6 space-y-6 divide-y divide-gray-200">
+    
+                  <dl className="w-full mt-6 space-y-4 ">
                     {accordionData.map((data, index) => {
                       return (
                         <AccordionItem
