@@ -13,6 +13,7 @@ import ArticleHome from "@/components/ArticleHome";
 import CategoryHome from "@/components/CategoryHome";
 import Testimoni from "@/components/Testimoni";
 import CookieConsent from "@/components/CookieConsent";
+import SubscribeForm from "@/components/SubscribeForm";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <CategoryHome />
       <ArticleHome />
       <Testimoni />
+      <SubscribeForm />
       <CookieConsent />
       <Footer />
     </>
