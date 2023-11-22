@@ -142,7 +142,10 @@ export default function Blogs() {
                                 />
                                 </Link>
                               </div>
-                              <div className="flex w-2/3 md:max-w-[55%] flex-1 flex-col space-y-1 md:space-y-2">
+                              <div className=" flex w-2/3 md:max-w-[55%] flex-1 flex-col space-y-1 md:space-y-2">
+                                <div className="flex items-center flex-wrap py-0.5 ">
+                                  <div className="text-[14px] font-bold text-[#073d30] uppercase">Pet News</div>
+                                </div>
                                 <Link
                                   href={
                                     ""

@@ -1,13 +1,68 @@
-import React from 'react'
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
-import GoTop from '@/components/GoTop'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import GoTop from "@/components/GoTop";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+import puppy from "@/assets/img/cat-1.png";
+import art1 from "@/assets/blogs/artic1.png"
+import art2 from "@/assets/blogs/artic2.png"
+import art3 from "@/assets/blogs/artic3.png"
+import art4 from "@/assets/blogs/artic4.png"
+import art5 from "@/assets/blogs/artic5.png"
+import art6 from "@/assets/blogs/artic6.png"
+import art7 from "@/assets/blogs/artic7.png"
+import art8 from "@/assets/blogs/artic8.png"
+import art9 from "@/assets/blogs/artic9.png"
+import art10 from "@/assets/blogs/artic10.png"
 
 export default function Category() {
+  const blogs = [
+    {
+      title: "8 Orange Cat Breeds for Anyone Who Loves a Redhead",
+      img: art1,
+    },
+    {
+      title: "8 Kid-Friendly Cat Breeds to Consider if You're Looking to Expand Your Family",
+      img: art2,
+    },
+    {
+      title: "15 White Cat Breeds You Should Know About",
+      img: art3,
+    },
+    {
+      title: "10 Friendly Cat Breeds that Make Perfect Pets",
+      img: art4,
+    },
+    {
+      title: "8 Creative Cat Furniture Pieces for Any Space",
+      img: art5,
+    },
+    {
+      title: "What Is a Feral Cat? How Are They Different Than Stray Cats?",
+      img: art6,
+    },
+    {
+      title: "Can Cats See Ghosts? We Asked a Vet and a Behavior Expert",
+      img: art7,
+    },
+    {
+      title: "Are Male Cats More Affectionate? It Depends!",
+      img: art8,
+    },
+    {
+      title: "Do Cats Love Their Owners? Here's How You Can Tell",
+      img: art9,
+    },
+    {
+      title: "Do Cats Get Jealous? Not Quite Like Humans Do, But Close",
+      img: art10,
+    },
+  ]
+
   return (
     <>
       <Head>
@@ -16,10 +71,125 @@ export default function Category() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />  
+      <Header />
       <GoTop />
+
+      <div className="bg-[#90e59b] flex relative z-10 items-center overflow-hidden">
+        <div className="container2 mx-auto px-6 flex items-center relative py-12">
+          <div className="md:w-1/2 lg:w-2/5 px-6 flex flex-col relative z-20 text">
+            <h1 className="font-bebas-neue uppercase text-3xl sm:text-5xl font-bold flex flex-col leading-none  text-gray-900">
+              Cats & Kittens
+            </h1>
+            <h3 className="text-2xl font-semibold flex flex-col py-4 leading-tight tracking-tight  text-[#1d4943]">
+              Cats and kittens make the sweetest pets! Learn everything you need
+              to know about cat adoption, caring for a cat, and cute cat name
+              ideas. Plus, take a look through the various cat breeds out there
+              to decide which type of kitty is perfect for you!
+            </h3>
+          </div>
+          <div className="hidden sm:block md:w-1/2 lg:w-3/5 relative">
+            <Image
+              src={puppy}
+              alt=""
+              className="max-w-xs md:max-w-sm2 m-auto"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#f8f3e7] py-8 flex relative z-10 items-center overflow-hidden">
+        <div className="flex flex-wrap space-x-1 text-base md:text-sm font-mabry text-gray-500 px-2 md:px-4 py-2">
+          <div className="flex flex-wrap space-x-3 w-full">
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-gray-900  py-4 px-6 rounded-full bg-[#ff74be] capitalize "
+            >
+              Cat Behavior
+            </a>{" "}
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#f3b05f]  py-4 px-6 rounded-full bg-[#736ef7] capitalize "
+            >
+              cat breeds
+            </a>{" "}
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#584eda]  py-4 px-6 rounded-full bg-[#7ce0cc] capitalize "
+            >
+              adopting a cat
+            </a>{" "}
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-gray-900  py-4 px-6 rounded-full bg-[#e05257] capitalize "
+            >
+              cat excercise & play
+            </a>{" "}
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#e05257]  py-4 px-6 rounded-full bg-[#ffb651] capitalize "
+            >
+              cat grooming
+            </a>{" "}
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#14322e]  py-4 px-6 rounded-full bg-[#a2d219] capitalize "
+            >
+              cat nutrition & diet
+            </a>{" "}
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-gray-900  py-4 px-6 rounded-full bg-[#ff74be] capitalize "
+            >
+              cat photo
+            </a>{" "}
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#f3b05f]  py-4 px-6 rounded-full bg-[#736ef7] capitalize "
+            >
+              cat safety tips & advice
+            </a>{" "}
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#584eda]  py-4 px-6 rounded-full bg-[#7ce0cc] capitalize "
+            >
+              basic cat training
+            </a>{" "}
+            <a
+              href="#"
+              className="m-1 flex flex-wrap items-center text-lg font-bold text-gray-900  py-4 px-6 rounded-full bg-[#e05257] capitalize "
+            >
+              cat health care
+            </a>{" "}
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#f8f3e7] py-8 flex relative z-10 items-center overflow-hidden">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center mt-8 mb-8 mx-auto w-full px-3 md:px-0 md:w-11/12 ">
+        {blogs.map((data, index) => {
+          return (
+            <div className="shadow-md hover:scale-105 p-3 flex rounded border cursor-pointer" key={index}>
+              <div className=" bg-white rounded-b group flex flex-col overflow-hidden ">
+                <Link href="" className="relative">
+                  <Image src={data.img} alt="" className="w-80 rounded-t" />{" "}
+                  <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 w-full"></div>
+                </Link>{" "}
+                <div className="relative px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+                  <div className="absolute top-2 left-2 flex flex-wrap bg-[#a2d219] rounded-lg px-2 py-0.5 min-w-10">
+                    <div className="text-[12px] font-semibold text-gray-800">Cat Health care</div>
+                  </div>
+                  <h3 className="pt-6 font-semibold text-base md:text-md text-[#002f6c]  leading-tight">
+                    <Link href="">{data.title}</Link>
+                  </h3>{" "}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      </div>
 
       <Footer />
     </>
-  )
+  );
 }
