@@ -43,7 +43,7 @@ const NewsFeed = () => {
         <div className="relative w-full overflow-hidden overflow-x-auto flex z-20 justify-center mt-0 px-3 md:px-6 py-3 bg-black">
           {news.map((ne, index) => {
             return (
-              <div className="min-w-full text-center2">
+              <div className="min-w-full text-center2" key={index}>
                 <div
                   className="w-full flex justify-center text-sm uppercase font-semibold text-[#f3c30e]"
                   key={index}

@@ -10,7 +10,7 @@ const Notice = () => {
   return (
     <>
       {show ? (
-        <div className="bg-transparent absolute z-20 px-5">
+        <div className="bg-transparent absolute z-20 px-5 mt-2">
         <div className="flex z-20 rounded justify-between space-x-5 px-2 md:px-3 py-2  bg-[#7ce993]">
           <div className="flex space-x-5 items-center">
             <p className="flex text-sm md:font-semibold tracking-tight text-gray-800">

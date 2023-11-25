@@ -38,9 +38,11 @@ const ArticleHome = () => {
     <>
       <div className="flex bg-[#f8f3e7] min-h-screen py-8 md:pt-[10px]">
         <div className="flex flex-row w-full">
+          
           <div className="flex flex-1 flex-col items-center justify-center relative">
             <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
               <section className="w-full mx-auto  mt-10 md:mt-10 px-5 ">
+              <h1 className="text-2xl font-bold text-[#095140]">Browse all our News</h1>
                 <div>
                   <div className="flex w-full space-x-4">
                     <div>
@@ -63,6 +65,9 @@ const ArticleHome = () => {
                                 />
                               </Link>
                               <div className="flex w-2/3 md:max-w-[55%] flex-1 flex-col space-y-1 md:space-y-2">
+                              <div className="flex items-center flex-wrap py-0.5 ">
+                                  <div className="text-[14px] font-bold text-[#073d30] uppercase">Pet News</div>
+                                </div>
                                 <Link
                                   href={""}
                                   className="text-gray-900 hover:text-indigo-600"

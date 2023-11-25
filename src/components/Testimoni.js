@@ -56,11 +56,17 @@ const Testimoni = () => {
   ];
   return (
     <>
-      <div className="flex relative z-10 items-center overflow-hidden bg-[#ff8dbd]">
+      <div className="relative z-10 items-center overflow-hidden bg-[#ff8dbd]">
+        <div className="flex flex-col space-y-3 justify-center text-center items-center pt-8 mx-auto w-3/5 ">
+          <h1 className="font-bold text-3xl text-[#1d4943]">
+          The Wall of Love ❤️
+          </h1>
+          <span className="text-gray-900">Let's turn the spotlight on where it should be — Ivy Stat members and their experience interning with companies</span>
+        </div>
         <div className="columns-1 md:columns-3 lg:columns-3 gap-6 mt-8 mb-8 mx-auto py-6 w-full px-3 md:px-0 md:w-10/12 ">
           {shout.map((data, index) => {
             return (
-              <div className="mb-4 rounded-lg flex justify-center  flex-col space-y-2 px-0 py-6 bg-[#f2f6f6]">
+              <div className="mb-4 rounded-lg flex justify-center  flex-col space-y-2 px-0 py-6 bg-[#f2f6f6]" key={index}>
                 <div className="flex space-x-3 px-3 w-full">
                   <div className="flex justify-center items-center">
                     <Image

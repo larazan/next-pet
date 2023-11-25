@@ -8,16 +8,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import puppy from "@/assets/img/cat-1.png";
-import art1 from "@/assets/blogs/artic1.png"
-import art2 from "@/assets/blogs/artic2.png"
-import art3 from "@/assets/blogs/artic3.png"
-import art4 from "@/assets/blogs/artic4.png"
-import art5 from "@/assets/blogs/artic5.png"
-import art6 from "@/assets/blogs/artic6.png"
-import art7 from "@/assets/blogs/artic7.png"
-import art8 from "@/assets/blogs/artic8.png"
-import art9 from "@/assets/blogs/artic9.png"
-import art10 from "@/assets/blogs/artic10.png"
+import art1 from "@/assets/blogs/artic1.png";
+import art2 from "@/assets/blogs/artic2.png";
+import art3 from "@/assets/blogs/artic3.png";
+import art4 from "@/assets/blogs/artic4.png";
+import art5 from "@/assets/blogs/artic5.png";
+import art6 from "@/assets/blogs/artic6.png";
+import art7 from "@/assets/blogs/artic7.png";
+import art8 from "@/assets/blogs/artic8.png";
+import art9 from "@/assets/blogs/artic9.png";
+import art10 from "@/assets/blogs/artic10.png";
 
 export default function Category() {
   const blogs = [
@@ -26,7 +26,8 @@ export default function Category() {
       img: art1,
     },
     {
-      title: "8 Kid-Friendly Cat Breeds to Consider if You're Looking to Expand Your Family",
+      title:
+        "8 Kid-Friendly Cat Breeds to Consider if You're Looking to Expand Your Family",
       img: art2,
     },
     {
@@ -61,7 +62,7 @@ export default function Category() {
       title: "Do Cats Get Jealous? Not Quite Like Humans Do, But Close",
       img: art10,
     },
-  ]
+  ];
 
   return (
     <>
@@ -91,7 +92,7 @@ export default function Category() {
             <Image
               src={puppy}
               alt=""
-              className="max-w-xs md:max-w-sm2 m-auto"
+              className="max-w-xs md:max-w-sm2 m-auto "
             />
           </div>
         </div>
@@ -164,29 +165,67 @@ export default function Category() {
         </div>
       </div>
 
-      <div className="bg-[#f8f3e7] py-8 flex relative z-10 items-center overflow-hidden">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center mt-8 mb-8 mx-auto w-full px-3 md:px-0 md:w-11/12 ">
-        {blogs.map((data, index) => {
-          return (
-            <div className="shadow-md hover:scale-105 p-3 flex rounded border cursor-pointer" key={index}>
-              <div className=" bg-white rounded-b group flex flex-col overflow-hidden ">
-                <Link href="" className="relative">
-                  <Image src={data.img} alt="" className="w-80 rounded-t" />{" "}
-                  <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 w-full"></div>
-                </Link>{" "}
-                <div className="relative px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-                  <div className="absolute top-2 left-2 flex flex-wrap bg-[#a2d219] rounded-lg px-2 py-0.5 min-w-10">
-                    <div className="text-[12px] font-semibold text-gray-800">Cat Health care</div>
+      <div className="bg-[#f8f3e7] pb-8 flex relative z-10 items-center overflow-hidden">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center mt-8 mb-8 mx-auto w-full px-3 md:px-0 md:w-11/12 ">
+          {blogs.map((data, index) => {
+            return (
+              <div
+                className="shadow hover:scale-105 p-3 flex rounded-lg border2 bg-[#f1ebdc] cursor-pointer"
+                key={index}
+              >
+                <div className=" bg-[#f1ebdc] rounded-b group flex flex-col overflow-hidden ">
+                  <Link href="" className="relative">
+                    <Image src={data.img} alt="" className="w-80 rounded-lg" />{" "}
+                    <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 w-full"></div>
+                  </Link>{" "}
+                  <div className="relative px-1 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+                    <div className="absolute top-2 left-0 flex flex-wrap bg-[#a2d219] rounded-lg px-2 py-0.5 min-w-10">
+                      <div className="text-[12px] font-semibold text-gray-800">
+                        Cat Health care
+                      </div>
+                    </div>
+                    <h3 className="pt-6 font-semibold text-lg md:text-md text-[#1c1707]  leading-tight">
+                      <Link href="">{data.title}</Link>
+                    </h3>{" "}
                   </div>
-                  <h3 className="pt-6 font-semibold text-base md:text-md text-[#002f6c]  leading-tight">
-                    <Link href="">{data.title}</Link>
-                  </h3>{" "}
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
+
+      <div className="bg-[#f8f3e7] pb-8 flex relative z-10 items-center overflow-hidden">
+        <div className="mx-auto w-10/12 flex justify-between">
+          <button className="flex items-center space-x-1 text-[#1e2e23]">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+            <span className="font-semibold">Newer Post</span>
+          </button>
+          <button className="flex items-center space-x-1 text-[#1e2e23]">
+            <span className="font-semibold">Older Post</span>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+
+            </div>
+          </button>
+        </div>
       </div>
 
       <Footer />

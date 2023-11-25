@@ -5,13 +5,20 @@ import Image from "next/image";
 import logo from "@/assets/logo.png";
 import NavLinks from "./NavLinks";
 import Autocomplete from "./Autocomplete";
+import MiniCart from "./MiniCart";
 
 const Header = () => {
+  const totalQTY = useState(12);
   const [show, setShow] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
     setShow(!show);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
   };
 
   const clickMenu = () => {
@@ -20,7 +27,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed2 z-20 flex h-10 md:h-14 w-full top-0 md:m-0 px-4 md:px-6 py-6 md:py-3  items-center justify-between bg-[#fbd718] shadow2">
+      <header className="fixed2 z-20 flex h-14 md:h-16 w-full top-0 md:m-0 px-4 md:px-6 py-6 md:py-3  items-center justify-between bg-[#fbd718] shadow2">
         <div className="flex w-full md:w-1/5 justify-between ">
           <div className="flex justify-between w-full md:w-[100px]">
             <section className="w-1/6">
@@ -170,7 +177,7 @@ const Header = () => {
             </section>
             <div className="w-4/6 md:w-full flex justify-center items-center">
               <Link href={"/"}>
-                <Image src={logo} alt="" />
+                <Image src={logo} alt="" className="w-28 md:w-40" />
               </Link>
             </div>
             <div className="w-1/6 flex justify-end md:hidden">
@@ -222,15 +229,15 @@ const Header = () => {
             <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-user-hexagon"
+                className="icon icon-tabler icon-tabler-user-hexagon"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                stroke-width="2"
+                strokeWidth="2"
                 stroke="currentColor"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
@@ -238,23 +245,27 @@ const Header = () => {
                 <path d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
               </svg>
             </button>
-            <button>
+            <button className="relative" onClick={() => setIsOpen(!isOpen)} >
               <svg
                 aria-hidden="true"
-                class="icon icon-cart"
+                className="icon icon-cart"
                 focusable="false"
                 viewBox="0 0 24 24"
                 role="img"
-                width="24px"
-                height="24px"
+                width="27px"
+                height="27px"
                 fill="none"
               >
                 <path
                   stroke="currentColor"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"
                 ></path>
               </svg>
+              <div
+                    className="absolute text-center top-2 right-[15%] w-4 h-4 text-[0.70rem] leading-tight tracking-tight font-bold flex items-center justify-center cursor-pointer text-slate-900 " >
+                    <span>{totalQTY}</span>
+                  </div>
             </button>
             <NavLinks />
 
@@ -283,6 +294,8 @@ const Header = () => {
       ) : (
         <></>
       )}
+      
+      <MiniCart isOpen={isOpen} handleClose={handleClose} />
     </>
   );
 };

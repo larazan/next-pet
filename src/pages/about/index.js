@@ -6,6 +6,11 @@ import Image from "next/image";
 import GoTop from '@/components/GoTop'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import SubscribeForm from '@/components/SubscribeForm';
+
+import foster from "@/assets/foster.png"
+import AdsModal from '@/components/AdsModal';
+import Promo from '@/components/Promo';
 
 export default function About() {
   return (
@@ -18,7 +23,37 @@ export default function About() {
 
       <Header />  
       <GoTop />
+      <AdsModal />
+      <Promo />
 
+      <div className="max-w-screen-xl mt-0 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-[#f8f3e7] text-gray-900 rounded-lg shadow-lg">
+        <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-3">
+            <h2 className="text-2xl lg:text-5xl font-bold leading-tight text-[#095140]">
+              About us{" "}
+            </h2>
+            <div className="text-4xl text-gray-900 font-semibold">
+            Pets are our thing
+            </div>
+            <div className='markdown-blog'>
+              <article className='flex flex-col space-y-6'>
+            <span className='text-2xl'>
+            That’s why we’re working to make life with cats even more awesome through something we call whole cat care. We consider everything about a cat’s body and mind in order to create solutions that improve the quality of their life and therefore, your co-existence. That might sound lofty for a cat company, but we are here to raise your expectations of what a cat company can be.
+            </span>
+            <span className='text-2xl'>
+            Today we’re a small team of cat persons working to make life with cats even more awesome than it already is. Is there something about caring for your cat that you wish we could improve? Reach out to hello@catperson.com and let us know!
+            </span>
+            </article>
+            </div>
+          </div>
+          
+        </div>
+        <div className="flex flex-col space-y-2">
+          <Image src={foster} alt='' />
+        </div>
+      </div>
+
+<SubscribeForm />
       <Footer />
     </>
   )

@@ -16,8 +16,8 @@ import Link from "next/link";
                   aria-label="Footer Navigation - Services"
                   className="flex flex-col space-y-3 mt-6"
                 >
-                  <span className="text-white text-lg font-semibold">
-                    Recipients
+                  <span className="text-white text-lg font-semibold uppercase">
+                    Shop
                   </span>
                   <ul className="space-y-1 text-md font-mabrybold">
                     <li>
@@ -25,7 +25,7 @@ import Link from "next/link";
                         href={"/faqs"}
                         className="text-white hover:underline  transition "
                       >
-                        Mom
+                        Shop All
                       </Link>
                     </li>
 
@@ -34,7 +34,7 @@ import Link from "next/link";
                         href={"/about"}
                         className="text-white hover:underline  transition "
                       >
-                        Dad
+                        Walk
                       </Link>
                     </li>
 
@@ -43,7 +43,7 @@ import Link from "next/link";
                         href="#"
                         className="text-white hover:underline  transition "
                       >
-                        Friends
+                        Carry
                       </a>
                     </li>
 
@@ -52,7 +52,7 @@ import Link from "next/link";
                         href={"/terms"}
                         className="text-white hover:underline  transition "
                       >
-                        Couples
+                        Home
                       </Link>
                     </li>
 
@@ -61,7 +61,7 @@ import Link from "next/link";
                         href={"/privacy"}
                         className="text-white hover:underline  transition "
                       >
-                        Kids
+                        Toys
                       </Link>
                     </li>
 
@@ -70,7 +70,16 @@ import Link from "next/link";
                         href={"/privacy"}
                         className="text-white hover:underline  transition "
                       >
-                        Teens
+                        Kit & Save
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        href={"/privacy"}
+                        className="text-white hover:underline  transition "
+                      >
+                        Grooming
                       </Link>
                     </li>
                   </ul>
@@ -82,8 +91,8 @@ import Link from "next/link";
                   aria-label="Footer Navigation - Company"
                   className="flex flex-col space-y-3 mt-6"
                 >
-                  <span className="text-white text-lg font-semibold">
-                  Occasions
+                  <span className="text-white text-lg font-semibold uppercase">
+                  Info
                   </span>
                   <ul className="space-y-1 text-md font-mabrybold">
                     <li>
@@ -91,7 +100,7 @@ import Link from "next/link";
                         href="#"
                         className="text-white hover:underline  transition "
                       >
-                        Birthday
+                        About
                       </a>
                     </li>
 
@@ -100,7 +109,7 @@ import Link from "next/link";
                         href="#"
                         className="text-white hover:underline  transition "
                       >
-                        Wedding
+                        Blog
                       </a>
                     </li>
 
@@ -109,7 +118,7 @@ import Link from "next/link";
                         href="#"
                         className="text-white hover:underline  transition "
                       >
-                        Anniversary
+                        Review
                       </a>
                     </li>
                     <li>
@@ -117,7 +126,7 @@ import Link from "next/link";
                         href="#"
                         className="text-white hover:underline  transition "
                       >
-                        Graduation
+                        Careers
                       </a>
                     </li>
                     <li>
@@ -125,7 +134,7 @@ import Link from "next/link";
                         href="#"
                         className="text-white hover:underline  transition "
                       >
-                        Housewaring
+                        Wholesale
                       </a>
                     </li>
                     <li>
@@ -133,7 +142,7 @@ import Link from "next/link";
                         href="#"
                         className="text-white hover:underline  transition "
                       >
-                        Retirement
+                        Affiliate
                       </a>
                     </li>
                   </ul>
@@ -145,7 +154,7 @@ import Link from "next/link";
                   aria-label="Footer Navigation - Services"
                   className="flex flex-col space-y-3 mt-6"
                 >
-                  <span className="text-white text-lg font-semibold">
+                  <span className="text-white text-lg font-semibold uppercase">
                     Interests
                   </span>
                   <ul className="space-y-1 text-md font-mabrybold">
@@ -154,7 +163,7 @@ import Link from "next/link";
                         href={"/faqs"}
                         className="text-white hover:underline  transition "
                       >
-                        Food + Drink
+                        Dogs
                       </Link>
                     </li>
 
@@ -163,7 +172,7 @@ import Link from "next/link";
                         href={"/about"}
                         className="text-white hover:underline  transition "
                       >
-                        Outdoors + Sports
+                        Cats
                       </Link>
                     </li>
 
@@ -172,7 +181,7 @@ import Link from "next/link";
                         href="#"
                         className="text-white hover:underline  transition "
                       >
-                        Animal Lovers
+                        Birds
                       </a>
                     </li>
 
@@ -181,7 +190,7 @@ import Link from "next/link";
                         href={"/terms"}
                         className="text-white hover:underline  transition "
                       >
-                        Travel
+                        Small Pets
                       </Link>
                     </li>
 
@@ -190,7 +199,7 @@ import Link from "next/link";
                         href={"/privacy"}
                         className="text-white hover:underline  transition "
                       >
-                        Selfcare
+                        Fish
                       </Link>
                     </li>
 
@@ -199,17 +208,10 @@ import Link from "next/link";
                         href={"/privacy"}
                         className="text-white hover:underline  transition "
                       >
-                        Gift Baskets
+                        Reptiles
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        href={"/privacy"}
-                        className="text-white hover:underline  transition "
-                      >
-                        Lifestyle
-                      </Link>
-                    </li>
+                    
                   </ul>
                 </nav>
               </div>
@@ -219,8 +221,8 @@ import Link from "next/link";
                   aria-label="Footer Navigation - Company"
                   className="flex flex-col space-y-3 mt-6"
                 >
-                  <span className="text-white text-lg font-semibold">
-                    Company
+                  <span className="text-white text-lg font-semibold uppercase">
+                    Help
                   </span>
                   <ul className="space-y-1 text-md font-mabrybold">
                     <li>
@@ -243,7 +245,7 @@ import Link from "next/link";
 
                     <li>
                       <Link
-                        href="/privacy-policy"
+                        href="/privacy"
                         className="text-white hover:underline  transition "
                       >
                         Privacy Policy
@@ -258,7 +260,25 @@ import Link from "next/link";
                         Contact Us
                       </Link>
                     </li>
+
+                    <li>
+                      <Link
+                        href="/contact"
+                        className="text-white hover:underline  transition "
+                      >
+                        Shipping & Return
+                      </Link>
+                    </li>
                     
+                    <li>
+                      <Link
+                        href="/contact"
+                        className="text-white hover:underline  transition "
+                      >
+                        Accessibility
+                      </Link>
+                    </li>
+
                   </ul>
                 </nav>
               </div>
