@@ -2,16 +2,16 @@ import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import product1 from "@/assets/product/produk1.png";
-import product2 from "@/assets/product/produk2.png";
-import product3 from "@/assets/product/produk3.png";
-import product4 from "@/assets/product/produk4.png";
-import product5 from "@/assets/product/produk5.png";
-import product6 from "@/assets/product/produk6.png";
-import product7 from "@/assets/product/produk7.png";
+import brand1 from "@/assets/brands/brand1.png"
+import brand2 from "@/assets/brands/brand2.png"
+import brand3 from "@/assets/brands/brand3.png"
+import brand4 from "@/assets/brands/brand4.png"
+import brand5 from "@/assets/brands/brand5.png"
+import brand6 from "@/assets/brands/brand6.png"
+import brand7 from "@/assets/brands/brand7.png"
 
-const Popular = () => {
-  let scrl = useRef(null);
+export default function BrandList() {
+    let scrl = useRef(null);
   const shiftN = 230;
   const [scrollX, setscrollX] = useState(0);
   const [scrolEnd, setscrolEnd] = useState(false);
@@ -42,59 +42,42 @@ const Popular = () => {
     }
   };
 
-  const productData = [
+  const brandData = [
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-      price: "91,00",
-      img: product1,
-      discount: "20",
+        img: brand1
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-      price: "91,00",
-      img: product2,
-      discount: "20",
+        img: brand2
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-      price: "91,00",
-      img: product3,
-      discount: "20",
+        img: brand3
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-      price: "91,00",
-      img: product4,
-      discount: "20",
+        img: brand4
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-      price: "91,00",
-      img: product5,
-      discount: "20",
+        img: brand5
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-      price: "91,00",
-      img: product6,
-      discount: "20",
+        img: brand6
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-      price: "91,00",
-      img: product7,
-      discount: "20",
+        img: brand7
     },
-  ];
+  ]
+
   return (
     <>
-      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+        <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-          <div className="flex space-x-1 items-center hover:opacity-80">
-            <span className="text-lg tracking-tighter uppercase md:text-2xl font-bold text-[#002f6c]">
-              You Might Also Like
+          <Link
+            href={"/"}
+            className="flex space-x-1 items-center hover:opacity-80"
+          >
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c]">
+              Brands
             </span>
-          </div>
+          </Link>
           {/* <div className="flex space-x-1">
             <div
               onClick={() => slide(-shiftN)}
@@ -194,43 +177,22 @@ const Popular = () => {
             ref={scrl}
             onScroll={scrollCheck}
           >
-            {productData.map((data, index) => {
+            {brandData.map((data, index) => {
               return (
                 <div
-                  className="transition-all duration-150 flex mr-[1em] "
+                  className="transition-all duration-150 flex mr-[.5em] "
                   key={index}
                 >
-                  <div className="flex flex-col space-y-2 w-[130px] md:w-[230px]  justify-center bg-white2 border2 shadow2 hover:shadow-lg">
-                    <div className="relative w-full bg-gray-200  flex ">
+                  <div className="flex w-[130px] md:w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
+                    <div className=" bg-white  flex ">
                       <Link
-                        href="/shop/product-2"
-                        className="flex p-2 space-y-3 justify-center items-center"
+                        href="/"
+                        className="flex flex-col space-y-3 justify-center items-center"
                       >
                         <div className="flex space-x-3">
                           <Image src={data.img} alt="" className="w-26 " />
                         </div>
                       </Link>{" "}
-                      <div className="absolute top-1 right-1">
-                        <div className="border-2 border-slate-700 px-1 ">
-                          <span className="text-sm font-semibold tracking-tighter text-gray-700 uppercase">
-                            -{data.discount}%
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col justify-center2 items-center2">
-                      <div className="flex text-center2 leading-tight">
-                        <Link href={"/shop/product-2"}>
-                          <span className="font-bold text-[10px] md:text-xs text-[#002f6c]  hover:underline">
-                            {data.title}
-                          </span>
-                        </Link>
-                      </div>
-                      <div>
-                        <span className="font-bold text-xs md:text-sm text-[#002f6c] tracking-tighter">
-                          £ {data.price}
-                        </span>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -238,9 +200,8 @@ const Popular = () => {
             })}
           </div>
         </div>
+
       </div>
     </>
-  );
-};
-
-export default Popular;
+  )
+}

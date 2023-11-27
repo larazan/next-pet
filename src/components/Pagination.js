@@ -4,10 +4,11 @@ import Link from 'next/link'
 const Pagination = () => {
   return (
     <>
+    <div className='flex bg-[#f8f3e7] items-center justify-center'>
       <div className="flex items-center justify-center mt-12 mb-10 space-x-2">
         <button
           disabled=""
-          className="border border-[#E4E4E4] rounded p-1 text-[#191919] disabled:text-[#A3A3A3] disabled:cursor-not-allowed"
+          className="border border-[#E4E4E4] rounded-full p-3 text-[#191919] disabled:text-[#A3A3A3] disabled:cursor-not-allowed hover:text-white hover:bg-orange-500"
           aria-label="go to previous page"
         >
           <svg
@@ -25,31 +26,31 @@ const Pagination = () => {
           </svg>
         </button>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-white bg-orange-500"
+          className="rounded-full p-1 w-10 h-10 text-center text-md font-medium flex justify-center items-center text-white bg-orange-500"
           href="/blog?category=All%20Categories&amp;page=1"
         >
           1
         </Link>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
+          className="rounded-full p-1 w-10 h-10 text-center text-md font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4] hover:text-white hover:bg-orange-500"
           href="/blog?category=All%20Categories&amp;page=2"
         >
           2
         </Link>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
+          className="rounded-full p-1 w-10 h-10 text-center text-md font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4] hover:text-white hover:bg-orange-500"
           href="/blog?category=All%20Categories&amp;page=3"
         >
           3
         </Link>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
+          className="rounded-full p-1 w-10 h-10 text-center text-md font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4] hover:text-white hover:bg-orange-500"
           href="/blog?category=All%20Categories&amp;page=4"
         >
           4
         </Link>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium hidden md:flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
+          className="rounded-full p-1 w-10 h-10 text-center text-md font-medium hidden md:flex justify-center items-center text-gray-900 border border-[#E4E4E4] hover:text-white hover:bg-orange-500"
           href="/blog?category=All%20Categories&amp;page=5"
         >
           5
@@ -75,13 +76,13 @@ const Pagination = () => {
           ></path>
         </svg>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
+          className="rounded-full p-1 w-10 h-10 text-center text-md font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4] hover:text-white hover:bg-orange-500"
           href="/blog?category=All%20Categories&amp;page=29"
         >
           29
         </Link>
         <button
-          className="border border-[#E4E4E4] rounded p-1 text-[#191919] disabled:text-[#A3A3A3] disabled:cursor-not-allowed"
+          className="border border-[#E4E4E4] rounded-full p-3 text-[#191919] disabled:text-[#A3A3A3] disabled:cursor-not-allowed hover:text-white hover:bg-orange-500"
           aria-label="go to next page"
         >
           <svg
@@ -98,6 +99,7 @@ const Pagination = () => {
             ></path>
           </svg>
         </button>
+      </div>
       </div>
     </>
   )

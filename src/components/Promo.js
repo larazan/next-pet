@@ -20,7 +20,7 @@ const Promo = () => {
     {!isClose ? (
       <>
       <div className="fixed left-0 top-[35%] z-30 cursor-pointer" onClick={handleClick}>
-        <div className="relative bg-white shadow-lg rounded w-[50px] h-[190px] ">
+        <div className="relative bg-[#e8fafe] shadow-lg rounded w-[50px] h-[190px] ">
           <button
             className="absolute flex -top-2 -right-2 border-2 border-white rounded-full bg-black text-white px-0.5 py-0.5 hover:opacity-80 cursor-pointer"
             onClick={handleClose}
