@@ -68,7 +68,7 @@ export default function BrandList() {
 
   return (
     <>
-        <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+        <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-white">
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
           <Link
             href={"/"}
@@ -173,17 +173,17 @@ export default function BrandList() {
           )}
           {/*  */}
           <div
-            className="mb-[1em] flex flex-row overflow-x-auto scroll-smooth"
+            className="mb-[1em] flex flex-row overflow-x-auto no-scrollbar scroll-smooth"
             ref={scrl}
             onScroll={scrollCheck}
           >
             {brandData.map((data, index) => {
               return (
                 <div
-                  className="transition-all duration-150 flex mr-[.5em] "
+                  className="transition-all duration-150 flex mr-[.6em] "
                   key={index}
                 >
-                  <div className="flex w-[130px] md:w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
+                  <div className="flex w-[130px] md:w-[180px] p-5 justify-center bg-white border shadow-md hover:shadow-lg">
                     <div className=" bg-white  flex ">
                       <Link
                         href="/"

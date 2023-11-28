@@ -93,7 +93,7 @@ export default function ProductList() {
 
   return (
     <>
-        <div className={`w-full max-w-[1280px] px-5 py-1 md:px-10 mx-auto bg-[#f8f3e7]`}>
+        <div className={`w-full max-w-[1280px] px-5 py-1 md:px-10 mx-auto bg-white`}>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 my-14 px-5 md:px-0">
           {productData.map((data, index) => {
             return (
@@ -102,7 +102,7 @@ export default function ProductList() {
                 className="transform overflow-hidden bg-transparent duration-200 hover:scale-105 cursor-pointer"
                 key={index}
               >
-                <div className="bg-[#f3f6f9] p-2" onMouseOver={() => setOpen(data.id)} onMouseOut={unhover}>
+                <div className="bg-[#f4f4f4] p-2 rounded-md" onMouseOver={() => setOpen(data.id)} onMouseOut={unhover}>
                 <Image
                   width={500}
                   height={500}

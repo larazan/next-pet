@@ -190,7 +190,7 @@ const Popular = () => {
           )}
           {/*  */}
           <div
-            className="mb-[1em] flex flex-row overflow-x-auto scroll-smooth"
+            className="mb-[1em] flex flex-row overflow-x-auto no-scrollbar scroll-smooth"
             ref={scrl}
             onScroll={scrollCheck}
           >

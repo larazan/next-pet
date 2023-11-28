@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -10,8 +10,15 @@ import BrandList from "@/components/BrandList";
 import ProductList from "@/components/ProductList";
 import Pagination from "@/components/Pagination";
 import SlideProduct from "@/components/SlideProduct";
+import FilterSide from "@/components/FilterSide";
 
 export default function Collection() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <Head>
@@ -23,88 +30,51 @@ export default function Collection() {
       <Header />
       <GoTop />
       <SlideProduct />
-      <div className="flex relative z-10 items-center overflow-hidden bg-[#f8f3e7]">
-        <div className="flex justify-between mx-auto py-6 w-full px-3 md:px-0 md:w-10/12">
-          <div className="border-black relative border-2 border-solid">
+      <div className="flex relative z-10 items-center overflow-hidden bg-white">
+        <div className="flex justify-between items-center mx-auto pt-3 w-full px-3 md:px-0 md:w-11/12">
+          <div className="border-black w-[280px] border border-solid">
             <button
-              className="place-content-center flex w-full items-center px-3 py-3 text-black focus:outline-none focus:ring-2 focus:ring-secondaryBlue xs:py-5"
-              id="headlessui-listbox-button-:r2:"
+              className="filter place-content-center flex w-full justify-between px-3 items-center py-1 text-black focus:outline-none "
               type="button"
-              aria-haspopup="listbox"
-              aria-expanded="true"
-              data-headlessui-state="open"
+              onClick={() => setIsOpen(!isOpen)}
             >
               <span className="text-black block max-w-[23ch] truncate text-14 font-semibold xs:max-w-none xs:text-16">
-                SALMON SAVORY CHEWS
+                Filter
               </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-                className="text-black absolute right-2 h-5 w-5"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v12m6-6H6"
+                  />
+                </svg>
+              </div>
             </button>
-            <ul
-              className="absolute z-10 m-0 mt-[2px] max-h-60 w-full overflow-auto border-0 border-t border-solid border-lightGrey bg-white p-0 px-0 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-              aria-labelledby="headlessui-listbox-button-:r2:"
-              aria-orientation="vertical"
-              id="headlessui-listbox-options-:ra:"
-              role="listbox"
-              tabindex="0"
-              data-headlessui-state="open"
-            >
-              <li
-                className="relative cursor-pointer select-none list-none border-0 border-t border-solid border-lightGrey p-0"
-                id="headlessui-listbox-option-:rb:"
-                role="option"
-                tabindex="-1"
-                aria-selected="false"
-                data-headlessui-state=""
-              >
-                <span className="block max-w-[26ch] truncate p-4 text-12 text-black min-[350px]:max-w-full xs:text-14">
-                  Chicken Savory Chews
-                </span>
-              </li>
-              <li
-                className="bg-secondaryBlue relative cursor-pointer select-none list-none border-0 border-t border-solid border-lightGrey p-0"
-                id="headlessui-listbox-option-:rc:"
-                role="option"
-                tabindex="-1"
-                aria-selected="false"
-                data-headlessui-state=""
-              >
-                <span className="block max-w-[26ch] truncate p-4 text-12 text-black min-[350px]:max-w-full xs:text-14">
-                  Salmon Savory Chews
-                </span>
-                <span className="text-white absolute inset-y-0 right-0 flex items-center pr-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </span>
-              </li>
-            </ul>
+          </div>
+          <div className="w-[280px] py-3 flex flex-wrap md:flex-nowrap items-center">
+            <select className="input-select text-sm z-1 border border-gray-800 text-black block truncate text-14 font-semibold">
+              <option value="RANK_ASC">Popularity</option>
+              <option value="PRICE_ASC">Lowest price</option>
+              <option value="PRICE_DESC">Highest price</option>
+              <option value="PRICE_DROP_ASC">Price drop</option>
+              <option value="RATING_DESC">Rating</option>
+              <option value="TREND_ASC">Trend</option>
+              <option value="NAME_ASC">Name</option>
+            </select>
           </div>
         </div>
       </div>
       <ProductList />
       <Pagination />
+      <FilterSide isOpen={isOpen} handleClose={handleClose} />
       <Footer />
     </>
   );

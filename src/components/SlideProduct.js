@@ -92,7 +92,7 @@ const SlideProduct = () => {
 
   return (
     <>
-      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-0 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-white">
+      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-0 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-white border-b-2">
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
           
           {/* <div className="flex space-x-1">
@@ -211,7 +211,7 @@ const SlideProduct = () => {
               </button>
           </div>
           <div
-            className="mb-[1em] w-10/12 bg-white flex flex-row overflow-x-auto scroll-smooth"
+            className="mb-[1em] w-10/12 bg-white flex flex-row overflow-x-auto no-scrollbar scroll-smooth"
             ref={scrl}
             onScroll={scrollCheck}
           >
@@ -221,7 +221,7 @@ const SlideProduct = () => {
                   className="transition-all duration-150 flex mr-[1em] w-full h-28"
                   key={index}
                 >
-                  <div className="flex mx-auto w-[130px] md:w-[725px]  bg-white p-2 border2 shadow2 hover:shadow-lg">
+                  <div className="flex mx-auto w-[130px] md:w-[725px]  bg-white p-2 border2 ">
                     <div className=' mx-auto min-w-[200px] flex justify-center items-center'>
                     <div className="flex w-1/6">
                       <Link
