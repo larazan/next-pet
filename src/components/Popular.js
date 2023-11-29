@@ -9,6 +9,7 @@ import product4 from "@/assets/product/produk4.png";
 import product5 from "@/assets/product/produk5.png";
 import product6 from "@/assets/product/produk6.png";
 import product7 from "@/assets/product/produk7.png";
+import pro1 from "@/assets/product/pro1.png"
 
 const Popular = () => {
   let scrl = useRef(null);
@@ -44,43 +45,50 @@ const Popular = () => {
 
   const productData = [
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      id: 1,
+      title: "Frieskies Seafood Sensations Dry Cat Food",
       price: "91,00",
       img: product1,
       discount: "20",
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      id: 1,
+      title: "Frieskies Seafood Sensations Dry Cat Food",
       price: "91,00",
       img: product2,
       discount: "20",
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      id: 1,
+      title: "Frieskies Seafood Sensations Dry Cat Food",
       price: "91,00",
       img: product3,
       discount: "20",
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      id: 1,
+      title: "Frieskies Seafood Sensations Dry Cat Food",
       price: "91,00",
       img: product4,
       discount: "20",
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      id: 1,
+      title: "Frieskies Seafood Sensations Dry Cat Food",
       price: "91,00",
       img: product5,
       discount: "20",
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      id: 1,
+      title: "Frieskies Seafood Sensations Dry Cat Food",
       price: "91,00",
       img: product6,
       discount: "20",
     },
     {
-      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      id: 1,
+      title: "Frieskies Seafood Sensations Dry Cat Food",
       price: "91,00",
       img: product7,
       discount: "20",
@@ -88,7 +96,7 @@ const Popular = () => {
   ];
   return (
     <>
-      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-10 justify-center2 items-center2 bg-[#f5f7f9]">
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
           <div className="flex space-x-1 items-center hover:opacity-80">
             <span className="text-lg tracking-tighter uppercase md:text-2xl font-bold text-[#002f6c]">
@@ -200,19 +208,19 @@ const Popular = () => {
                   className="transition-all duration-150 flex mr-[1em] "
                   key={index}
                 >
-                  <div className="flex flex-col space-y-2 w-[130px] md:w-[230px]  justify-center bg-white2 border2 shadow2 hover:shadow-lg">
-                    <div className="relative w-full bg-gray-200  flex ">
+                  <div className="flex flex-col space-y-2 w-[130px] md:w-[230px]  justify-center bg-white2 border2 shadow2 ">
+                    <div className="relative w-full h-56 bg-gray-200  flex ">
                       <Link
                         href="/shop/product-2"
-                        className="flex p-2 space-y-3 justify-center items-center"
+                        className="flex p-4 w-full justify-center items-center"
                       >
-                        <div className="flex space-x-3">
-                          <Image src={data.img} alt="" className="w-26 " />
+                        <div className="w-full flex justify-center items-center">
+                          <Image src={data.img} alt="" className="w-40 " />
                         </div>
                       </Link>{" "}
-                      <div className="absolute top-1 right-1">
-                        <div className="border-2 border-slate-700 px-1 ">
-                          <span className="text-sm font-semibold tracking-tighter text-gray-700 uppercase">
+                      <div className="absolute top-2 right-2">
+                        <div className="flex justify-center bg-[#ffcfcf] px-1 py-0.5 rounded">
+                          <span className="text-[12px] font-semibold px-0.5 text-[#e6568f] uppercase">
                             -{data.discount}%
                           </span>
                         </div>
@@ -221,7 +229,7 @@ const Popular = () => {
                     <div className="flex flex-col justify-center2 items-center2">
                       <div className="flex text-center2 leading-tight">
                         <Link href={"/shop/product-2"}>
-                          <span className="font-bold text-[10px] md:text-xs text-[#002f6c]  hover:underline">
+                          <span className="font-bold text-[14px] md:text-[14px] text-[#002f6c]  hover:underline">
                             {data.title}
                           </span>
                         </Link>

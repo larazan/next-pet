@@ -4,9 +4,9 @@ import { Tabs, Tab } from './Tabs';
 const Ingredient = () => {
   return (
     <div className="flex relative z-10 items-center overflow-hidden bg-white">
-      <div className='w-full py-10'>
+      <div className='flex justify-between w-full py-10'>
       <Tabs>
-        <Tab label="Tab 1">
+        <Tab label="Ingredients">
           <div className="py-4">
             <h2 className="text-lg font-medium mb-2">Tab 1 Content</h2>
             <p className="text-gray-700">

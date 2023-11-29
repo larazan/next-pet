@@ -9,6 +9,8 @@ import Slideshow from '@/components/Slideshow';
 import BrandList from '@/components/BrandList';
 import ProductList from '@/components/ProductList';
 
+import promo from "@/assets/promo2.jpeg"
+
 export default function Shop() {
   return (
     <>
@@ -22,6 +24,9 @@ export default function Shop() {
       <GoTop />
       <Slideshow />
       <BrandList />
+      <div>
+        <Image src={promo} alt='' />
+      </div>
       <ProductList />
       <Footer />
     </>

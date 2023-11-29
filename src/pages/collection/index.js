@@ -74,7 +74,7 @@ export default function Collection() {
       </div>
       <ProductList />
       <Pagination />
-      <FilterSide isOpen={isOpen} handleClose={handleClose} />
+      <FilterSide isOpen={isOpen} handleClose={handleClose} setIsOpen={setIsOpen} />
       <Footer />
     </>
   );
