@@ -33,7 +33,7 @@ export default function Detail() {
               <Image src={detail1} alt="" className="object-cover" />
             </div>
           </div>
-          <div className="w-1/2 flex flex-col px-8 py-4 bg-[#f1f1f3]">
+          <div className="w-1/2 flex flex-col px-10 py-4 bg-[#f1f1f3]">
             <div>
               <nav className="text-sm my-1" aria-label="Breadcrumb">
                 <ol className="list-none p-0 inline-flex">
@@ -98,34 +98,114 @@ export default function Detail() {
                 </span>
               </div>
             </div>
-            <div>form</div>
-            <div className="flex flex-col space-y-0">
+            <div className="py-6 flex flex-col">
+              <div className="flex h-14 border-x-2 border-t-2 border-gray-900">
+                <button
+                  data-action="decrement"
+                  class="flex bg-[#f1f1f3] text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 cursor-pointer outline-none"
+                >
+                  <span class="m-auto text-2xl font-thin">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M18 12H6"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <input
+                  type="number"
+                  class="outline-none focus:outline-none text-center w-full bg-[#f1f1f3] font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
+                  name="custom-input-number"
+                  value="0"
+                ></input>
+                <button
+                  data-action="increment"
+                  class="flex bg-[#f1f1f3] text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 cursor-pointer"
+                >
+                  <span class="m-auto text-2xl font-thin">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 6v12m6-6H6"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <button className="flex w-full items-center justify-center py-4 border-2 border-gray-900 bg-[#c7dbf0] hover:bg-[#8fb7e1]">
+                <span className="uppercase text-[16px] font-semibold">
+                  Add to cart
+                </span>
+              </button>
+            </div>
+            <div className="flex flex-col space-y-1">
               <div className="flex space-x-1 items-center">
                 <div>
-
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+                    />
+                  </svg>
                 </div>
-                <span className="">
-                Free shipping on orders of $50 or more
-                </span>
+                <span className="">Free shipping on orders of $50 or more</span>
               </div>
               <div className="flex space-x-1 items-center">
                 <div>
-
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                    />
+                  </svg>
                 </div>
-                <span>
-                30-day Money Back Guarantee
-                </span>
+                <span>30-day Money Back Guarantee</span>
               </div>
             </div>
             <div className="flex flex-col space-y-2 py-5">
               <div>
                 <span className="font-bold">Description</span>
               </div>
-              <ul className="text-sm">
-                <ol>92% real, dehydrated salmon</ol>
-                <ol>Grain-free and low carb. No potatoes, corn, rice or wheat</ol>
-                <ol>Satisfying chewy texture</ol>
-                <ol>Resealable bag</ol>
+              <ul className="text-[15px] list-disc pl-5">
+                <li>92% real, dehydrated salmon</li>
+                <li>
+                  Grain-free and low carb. No potatoes, corn, rice or wheat
+                </li>
+                <li>Satisfying chewy texture</li>
+                <li>Resealable bag</li>
               </ul>
             </div>
           </div>
