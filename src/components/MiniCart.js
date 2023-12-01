@@ -1,16 +1,34 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import ProductItem from "./ProductItem";
 
-const MiniCart = ({ isOpen, handleClose }) => {
+const MiniCart = ({ isOpen, handleClose, setIsOpen }) => {
+  let autoRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!autoRef.current.contains(e.target)) {
+        setIsOpen(false);
+        console.log(autoRef.current);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
+
   return (
     <>
       <div
         className={`${
           isOpen ? "right-0" : "-right-full"
         } flex flex-col w-full bg-white fixed top-0 h-full shadow-2xl md:w-[35vw] transition-all duration-300 z-50 px-4 lg:px-[35px]`}
+        ref={autoRef}
       >
         <div className="flex w-full items-center justify-between py-4 border-b">
           <div className="w-1/6">

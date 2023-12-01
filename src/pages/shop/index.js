@@ -10,6 +10,13 @@ import BrandList from '@/components/BrandList';
 import ProductList from '@/components/ProductList';
 
 import promo from "@/assets/promo2.jpeg"
+import bird from "@/assets/img/shopbypet-holiday-bird.png"
+import cat from "@/assets/img/shopbypet-holiday-cat.png"
+import dog from "@/assets/img/shopbypet-holiday-dog.png"
+import fish from "@/assets/img/shopbypet-holiday-fish.png"
+import reptile from "@/assets/img/shopbypet-holiday-reptile.png"
+import smallpet from "@/assets/img/shopbypet-holiday-smallpet.png"
+
 
 export default function Shop() {
   return (

@@ -4,7 +4,7 @@ const Accordion = (props) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="bg-white py-0 flex flex-col w-full ">
+    <div className={` ${props.bg ? 'bg-[#'+props.bg+']' : 'bg-white'} py-0 flex flex-col w-full `}>
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex items-center justify-between h-12 px-3 font-semibold"

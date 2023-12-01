@@ -11,7 +11,7 @@ const CookieConsent = () => {
     <>
       {isShow ? (
         <>
-        <div className="fixed left-2 bottom-0 z-50 ">
+        <div className="fixed left-2 bottom-0 z-40 ">
           <div className="fixed sm:left-2 bottom-2 rounded-lg bg-[#fbd718] shadow-2xl w-full sm:w-1/2 xl:w-1/4 max-w-[250px] md:max-w-[250px] overflow-hidden">
             <div className="">
               <div className="relative overflow-hidden px-4 md:px-6 pt-4 md:pt-6">

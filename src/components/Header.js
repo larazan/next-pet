@@ -7,6 +7,7 @@ import NavLinks from "./NavLinks";
 import Autocomplete from "./Autocomplete";
 import MiniCart from "./MiniCart";
 import UserMenu from "./UserMenu";
+import Menu from "./Menu";
 
 const Header = () => {
   const totalQTY = useState(12);
@@ -48,133 +49,7 @@ const Header = () => {
                   />
                 </svg>
               </button>
-              <div
-                className={` ${
-                  openMenu === false ? "hidden" : "flex flex-col"
-                }   z-30 fixed top-0 left-0 text-white text-4xl font-bold  flex-1 flex-col justify-between`}
-              >
-                <aside className="bg-white w-[300px] h-[100vh] py-6 z-50">
-                  <button
-                    className="absolute flex top-1 right-1 rounded text-gray-800 px-1 py-1 cursor-pointer"
-                    onClick={clickMenu}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
-                      />
-                    </svg>
-                  </button>
-                  <nav className="mt-3 space-y-7 text-sm">
-                    <div className="px-2 space-y-2">
-                      <div className="flex flex-col space-y-1 text-[20px]">
-                        <Link
-                          rel="noopener noreferrer"
-                          href="/category"
-                          className="px-3 py-1 rounded text-green-500 hover:bg-green-500 hover:text-white"
-                        >
-                          Recipients
-                        </Link>
-                        <Link
-                          rel="noopener noreferrer"
-                          href="/detail"
-                          className="px-3 py-1 rounded text-pink-500 hover:bg-pink-500 hover:text-white"
-                        >
-                          Occasions
-                        </Link>
-                        <Link
-                          rel="noopener noreferrer"
-                          href="reviews"
-                          className="px-3 py-1 rounded text-blue-500 hover:bg-blue-500 hover:text-white"
-                        >
-                          Interests
-                        </Link>
-                        <a
-                          rel="noopener noreferrer"
-                          href="#"
-                          className="px-3 py-1 rounded text-indigo-500 hover:bg-indigo-500 hover:text-white"
-                        >
-                          Popular
-                        </a>
-                      </div>
-                    </div>
-                    <div className="px-6 space-y-4">
-                      <h2 className="text-[18px] font-semibold text-gray-400">
-                        Review
-                      </h2>
-                      <div className="flex flex-col space-y-3 text-[14px] text-gray-600 capitalize">
-                        <a
-                          rel="noopener noreferrer"
-                          href="#"
-                          className="hover:text-indigo-500"
-                        >
-                          electronic
-                        </a>
-                        <a
-                          rel="noopener noreferrer"
-                          href="#"
-                          className="hover:text-indigo-500"
-                        >
-                          kitchen
-                        </a>
-                        <a
-                          rel="noopener noreferrer"
-                          href="#"
-                          className="hover:text-indigo-500"
-                        >
-                          home & garden
-                        </a>
-                        <a
-                          rel="noopener noreferrer"
-                          href="#"
-                          className="hover:text-indigo-500"
-                        >
-                          health & leisure
-                        </a>
-                        <a
-                          rel="noopener noreferrer"
-                          href="#"
-                          className="hover:text-indigo-500"
-                        >
-                          tech
-                        </a>
-                        <a
-                          rel="noopener noreferrer"
-                          href="#"
-                          className="hover:text-indigo-500"
-                        >
-                          baby & kid
-                        </a>
-                        <a
-                          rel="noopener noreferrer"
-                          href="#"
-                          className="hover:text-indigo-500"
-                        >
-                          style
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="px-6 space-y-4">
-                      <Link
-                        href={""}
-                        className="text-[18px] font-semibold text-gray-800 hover:text-indigo-600"
-                      >
-                        Deals
-                      </Link>
-                    </div>
-                  </nav>
-                </aside>
-                <div className="opacity-50 fixed inset-0 z-30 bg-black"></div>
-              </div>
+              
             </section>
             <div className="w-4/6 md:w-full flex justify-center items-center">
               <Link href={"/"}>
@@ -228,15 +103,15 @@ const Header = () => {
         <div className="w-1/5 hidden md:flex justify-end">
           <div className="flex space-x-3 items-center">
             <UserMenu />
-            <button className="relative" onClick={() => setIsOpen(!isOpen)} >
+            <button className="flex relative" onClick={() => setIsOpen(!isOpen)} >
               <svg
                 aria-hidden="true"
                 className="icon icon-cart"
                 focusable="false"
                 viewBox="0 0 24 24"
                 role="img"
-                width="27px"
-                height="27px"
+                width="28px"
+                height="28px"
                 fill="none"
               >
                 <path
@@ -245,10 +120,9 @@ const Header = () => {
                   d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"
                 ></path>
               </svg>
-              <div
-                    className="absolute text-center top-2 right-[15%] w-4 h-4 text-[0.70rem] leading-tight tracking-tight font-bold flex items-center justify-center cursor-pointer text-slate-900 " >
-                    <span>{totalQTY}</span>
-                  </div>
+              <div className="absolute text-center top-2 right-[20%] w-4 h-4 text-[0.70rem] leading-tight tracking-tighter font-bold flex items-center justify-center cursor-pointer text-slate-900 " >
+                <span className="font-bold">{totalQTY}</span>
+              </div>
             </button>
             <NavLinks />
 
@@ -278,7 +152,8 @@ const Header = () => {
         <></>
       )}
       
-      <MiniCart isOpen={isOpen} handleClose={handleClose} />
+      <MiniCart isOpen={isOpen} handleClose={handleClose} setIsOpen={setIsOpen} />
+      <Menu openMenu={openMenu} clickMenu={clickMenu} setOpenMenu={setOpenMenu} />
     </>
   );
 };
