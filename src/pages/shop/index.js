@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from "next/head";
 import Image from 'next/image';
+import Link from 'next/link';
 
 import GoTop from '@/components/GoTop'
 import Header from '@/components/Header'
@@ -33,6 +34,46 @@ export default function Shop() {
       <BrandList />
       <div>
         <Image src={promo} alt='' />
+      </div>
+      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-white">
+        <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
+        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+          <Image src={cat} className='w-28 ' alt='' />
+          <div>
+            <span className='font-semibold'>Cat</span>
+          </div>
+        </Link>
+        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+          <Image src={dog} className='w-28' alt='' />
+          <div>
+            <span className='font-semibold'>Dog</span>
+          </div>
+        </Link>
+        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+          <Image src={bird} className='w-28' alt='' />
+          <div>
+            <span className='font-semibold'>Bird</span>
+          </div>
+        </Link>
+        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+          <Image src={fish} className='w-28' alt='' />
+          <div>
+            <span className='font-semibold'>Fish</span>
+          </div>
+        </Link>
+        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+          <Image src={reptile} className='w-28' alt='' />
+          <div>
+            <span className='font-semibold'>Reptile</span>
+          </div>
+        </Link>
+        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+          <Image src={smallpet} className='w-28' alt='' />
+          <div>
+            <span className='font-semibold'>Small Pet</span>
+          </div>
+        </Link>
+      </div>
       </div>
       <ProductList />
       <Footer />

@@ -32,9 +32,9 @@ export default function Collection() {
       <SlideProduct />
       <div className="flex relative z-10 items-center overflow-hidden bg-white">
         <div className="flex justify-between items-center mx-auto pt-3 w-full px-3 md:px-0 md:w-11/12">
-          <div className="border-black w-[280px] border border-solid">
+          <div className="rounded-full border-black w-[280px] border-2 border-solid hover:shadow-md transform duration-200 hover:scale-105">
             <button
-              className="filter place-content-center flex w-full justify-between px-3 items-center py-1 text-black focus:outline-none "
+              className="filter2 place-content-center flex w-full justify-between px-3 items-center py-1 text-black focus:outline-none "
               type="button"
               onClick={() => setIsOpen(!isOpen)}
             >
@@ -53,7 +53,7 @@ export default function Collection() {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d="M12 6v12m6-6H6"
+                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
                   />
                 </svg>
               </div>
@@ -74,7 +74,11 @@ export default function Collection() {
       </div>
       <ProductList />
       <Pagination />
-      <FilterSide isOpen={isOpen} handleClose={handleClose} setIsOpen={setIsOpen} />
+      <FilterSide
+        isOpen={isOpen}
+        handleClose={handleClose}
+        setIsOpen={setIsOpen}
+      />
       <Footer />
     </>
   );

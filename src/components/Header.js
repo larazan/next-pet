@@ -56,7 +56,30 @@ const Header = () => {
                 <Image src={logo} alt="" className="w-28 md:w-40" />
               </Link>
             </div>
-            <div className="w-1/6 flex justify-end md:hidden">
+            <div className="w-1/6 flex space-x-1 items-center justify-end md:hidden">
+            <div className="">
+        <button className="flex relative" onClick={() => setIsOpen(!isOpen)} >
+              <svg
+                aria-hidden="true"
+                className="icon icon-cart"
+                focusable="false"
+                viewBox="0 0 24 24"
+                role="img"
+                width="28px"
+                height="28px"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"
+                ></path>
+              </svg>
+              <div className="absolute text-center top-2 right-[20%] w-4 h-4 text-[0.70rem] leading-tight tracking-tighter font-bold flex items-center justify-center cursor-pointer text-slate-900 " >
+                <span className="font-bold">{totalQTY}</span>
+              </div>
+            </button>
+        </div>
               <div
                 id="search-toggle"
                 className="flex items-center cursor-pointer"
@@ -98,8 +121,9 @@ const Header = () => {
         />
       </div> */}
 
+        
         <Autocomplete />
-
+        
         <div className="w-1/5 hidden md:flex justify-end">
           <div className="flex space-x-3 items-center">
             <UserMenu />
