@@ -32,14 +32,14 @@ const Menu = ({
       <div
         className={`${
           openMenu ? "left-0" : "-left-full"
-        } flex flex-col w-full bg-[#fbd718] fixed top-0 h-full shadow-2xl md:w-[35vw] transition-all duration-300 z-50 px-4 lg:px-[35px]`}
+        } flex flex-col w-full bg-[#fbd718] overflow-y-auto fixed top-0 h-full shadow-2xl md:w-[35vw] transition-all duration-300 z-50 px-4 lg:px-[35px]`}
         ref={autoRef}
       >
         <div className="flex w-full items-center justify-between py-4 border-b border-black">
           <div className="w-1/2">
             <Link href={"/"}>
-                <Image src={logo} alt="" className="w-28 md:w-40" />
-              </Link>
+              <Image src={logo} alt="" className="w-28 md:w-32" />
+            </Link>
           </div>
 
           <div className="flex justify-end w-1/2">
@@ -68,23 +68,41 @@ const Menu = ({
         <div className="h-4/6 divide-y divide-gray-700">
           <Accordion title="Supplements" bg="fbd718">
             <div className="overflow-hidden pb-2">
-              <div class="duration-300 px-4">
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+              <div className="duration-300 px-4">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Natural Food
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Treats
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Toys
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Accessories
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Apparel
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Shop All
                 </a>
               </div>
@@ -92,62 +110,137 @@ const Menu = ({
           </Accordion>
           <Accordion title="Dog" bg="fbd718">
             <div className="overflow-hidden pb-2">
-              <div class="duration-300 px-4">
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+              <div className="duration-300 px-4">
+                <Link
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href={"/breeds"}
+                >
+                  Dog Breeds
+                </Link>
+                <Link
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href={"/category"}
+                >
+                  Dog Articles
+                </Link>
+                <Link
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href={"/collection"}
+                >
                   Food
-                </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                </Link>
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Treats
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Health & Wellness
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Accessories
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <Link
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="shop"
+                >
                   Shop All
-                </a>
+                </Link>
               </div>
             </div>
           </Accordion>
           <Accordion title="Cat" bg="fbd718">
             <div className="overflow-hidden pb-2">
-              <div class="duration-300 px-4">
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+              <div className="duration-300 px-4">
+                <Link
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href={"/breeds"}
+                >
+                  Cat Breeds
+                </Link>
+                <Link
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href={"/category"}
+                >
+                  Cat Articles
+                </Link>
+                <Link
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href={"/collection"}
+                >
                   Food
-                </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                </Link>
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Treats
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Health & Wellness
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Accessories
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <Link
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href={"/shop"}
+                >
                   Shop All
-                </a>
+                </Link>
               </div>
             </div>
           </Accordion>
           <Accordion title="Fish" bg="fbd718">
             <div className="overflow-hidden pb-2">
-              <div class="duration-300 px-4">
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+              <div className="duration-300 px-4">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Food
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Treats
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Health & Wellness
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
+                  Equipment
+                </a>
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Accessories
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Shop All
                 </a>
               </div>
@@ -155,20 +248,35 @@ const Menu = ({
           </Accordion>
           <Accordion title="Small Pet" bg="fbd718">
             <div className="overflow-hidden pb-2">
-              <div class="duration-300 px-4">
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+              <div className="duration-300 px-4">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Food
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Treats
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Health & Wellness
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Accessories
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Shop All
                 </a>
               </div>
@@ -176,20 +284,35 @@ const Menu = ({
           </Accordion>
           <Accordion title="Reptile" bg="fbd718">
             <div className="overflow-hidden pb-2">
-              <div class="duration-300 px-4">
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+              <div className="duration-300 px-4">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Food
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Treats
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Health & Wellness
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Accessories
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Shop All
                 </a>
               </div>
@@ -197,27 +320,47 @@ const Menu = ({
           </Accordion>
           <Accordion title="Bird" bg="fbd718">
             <div className="overflow-hidden pb-2">
-              <div class="duration-300 px-4">
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+              <div className="duration-300 px-4">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Food
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Treats
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Health & Wellness
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Accessories
                 </a>
-                <a class="flex items-center h-8 text-base text-gray-900 " href="#">
+                <a
+                  className="flex items-center h-8 text-base font-semibold text-gray-900 "
+                  href="#"
+                >
                   Shop All
                 </a>
               </div>
             </div>
           </Accordion>
+          <div className={` py-0 flex flex-col w-full `}>
+            <Link href={"/blogs"} className="flex items-center justify-between h-12 px-3 text-base md:text-[18px] font-semibold md:font-bold">
+              <span>Blog</span>
+            </Link>
+          </div>
         </div>
-        <div className="flex h-2/6 items-end justify-end flex-col space-y-1 py-8 mt-0">
+        {/* <div className="flex h-2/6 items-end justify-end flex-col space-y-1 py-8 mt-0">
           <div className="flex w-full items-center space-x-2 cursor-pointer">
             <div className=" font-semibold text-slate-900">
               <div className="">
@@ -246,7 +389,7 @@ const Menu = ({
             
             <div className="font-medium">Logout</div>
           </div>
-        </div>
+        </div> */}
       </div>
       {openMenu ? (
         <div className="opacity-50 fixed inset-0 z-30 bg-black"></div>
@@ -254,7 +397,7 @@ const Menu = ({
         <></>
       )}
     </>
-  )
+  );
 }
 
 export default Menu

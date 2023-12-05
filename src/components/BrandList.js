@@ -10,7 +10,7 @@ import brand5 from "@/assets/brands/brand5.png"
 import brand6 from "@/assets/brands/brand6.png"
 import brand7 from "@/assets/brands/brand7.png"
 
-export default function BrandList() {
+ const BrandList = () => {
     let scrl = useRef(null);
   const shiftN = 230;
   const [scrollX, setscrollX] = useState(0);
@@ -205,3 +205,5 @@ export default function BrandList() {
     </>
   )
 }
+
+export default BrandList

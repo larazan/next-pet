@@ -31,16 +31,16 @@ const Header = () => {
     <>
       <header className="fixed2 z-20 flex h-14 md:h-16 w-full top-0 md:m-0 px-4 md:px-6 py-6 md:py-3  items-center justify-between bg-[#fbd718] shadow2">
         <div className="flex w-full md:w-1/5 justify-between ">
-          <div className="flex justify-between w-full md:w-[100px]">
+          <div className="flex justify-between w-full md:w-[150px] space-x-3">
             <section className="w-1/6">
-              <button className=" h-8 w-8 md:hidden" onClick={clickMenu}>
+              <button className=" h-8 w-8 md:hidden2" onClick={clickMenu}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth={2}
+                  strokeWidth={2.5}
                 >
                   <path
                     strokeLinecap="round"
@@ -49,37 +49,39 @@ const Header = () => {
                   />
                 </svg>
               </button>
-              
             </section>
-            <div className="w-4/6 md:w-full flex justify-center items-center">
+            <div className="w-5/6 md:w-full2 flex justify-center items-center">
               <Link href={"/"}>
                 <Image src={logo} alt="" className="w-28 md:w-40" />
               </Link>
             </div>
             <div className="w-1/6 flex space-x-1 items-center justify-end md:hidden">
-            <div className="">
-        <button className="flex relative" onClick={() => setIsOpen(!isOpen)} >
-              <svg
-                aria-hidden="true"
-                className="icon icon-cart"
-                focusable="false"
-                viewBox="0 0 24 24"
-                role="img"
-                width="28px"
-                height="28px"
-                fill="none"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"
-                ></path>
-              </svg>
-              <div className="absolute text-center top-2 right-[20%] w-4 h-4 text-[0.70rem] leading-tight tracking-tighter font-bold flex items-center justify-center cursor-pointer text-slate-900 " >
-                <span className="font-bold">{totalQTY}</span>
+              <div className="">
+                <button
+                  className="flex relative"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="icon icon-cart"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    width="28px"
+                    height="28px"
+                    fill="none"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"
+                    ></path>
+                  </svg>
+                  <div className="absolute text-center top-2 right-[20%] w-4 h-4 text-[0.70rem] leading-tight tracking-tighter font-bold flex items-center justify-center cursor-pointer text-slate-900 ">
+                    <span className="font-bold">{totalQTY}</span>
+                  </div>
+                </button>
               </div>
-            </button>
-        </div>
               <div
                 id="search-toggle"
                 className="flex items-center cursor-pointer"
@@ -121,13 +123,15 @@ const Header = () => {
         />
       </div> */}
 
-        
         <Autocomplete />
-        
+
         <div className="w-1/5 hidden md:flex justify-end">
           <div className="flex space-x-3 items-center">
             <UserMenu />
-            <button className="flex relative" onClick={() => setIsOpen(!isOpen)} >
+            <button
+              className="flex relative"
+              onClick={() => setIsOpen(!isOpen)}
+            >
               <svg
                 aria-hidden="true"
                 className="icon icon-cart"
@@ -144,11 +148,11 @@ const Header = () => {
                   d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"
                 ></path>
               </svg>
-              <div className="absolute text-center top-2 right-[20%] w-4 h-4 text-[0.70rem] leading-tight tracking-tighter font-bold flex items-center justify-center cursor-pointer text-slate-900 " >
+              <div className="absolute text-center top-2 right-[20%] w-4 h-4 text-[0.70rem] leading-tight tracking-tighter font-bold flex items-center justify-center cursor-pointer text-slate-900 ">
                 <span className="font-bold">{totalQTY}</span>
               </div>
             </button>
-            <NavLinks />
+            {/* <NavLinks /> */}
 
             {/* <Notification /> */}
 
@@ -175,9 +179,17 @@ const Header = () => {
       ) : (
         <></>
       )}
-      
-      <MiniCart isOpen={isOpen} handleClose={handleClose} setIsOpen={setIsOpen} />
-      <Menu openMenu={openMenu} clickMenu={clickMenu} setOpenMenu={setOpenMenu} />
+
+      <MiniCart
+        isOpen={isOpen}
+        handleClose={handleClose}
+        setIsOpen={setIsOpen}
+      />
+      <Menu
+        openMenu={openMenu}
+        clickMenu={clickMenu}
+        setOpenMenu={setOpenMenu}
+      />
     </>
   );
 };

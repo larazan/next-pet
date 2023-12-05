@@ -36,6 +36,9 @@ export default function Shop() {
         <Image src={promo} alt='' />
       </div>
       <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-white">
+        <div>
+          <span className="text-lg md:text-2xl font-bold text-[#002f6c]">Shop By Pets</span>
+        </div>
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
         <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
           <Image src={cat} className='w-28 ' alt='' />

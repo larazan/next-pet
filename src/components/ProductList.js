@@ -13,7 +13,7 @@ import product8 from "@/assets/product/produk8.png"
 import product9 from "@/assets/product/produk9.png"
 import pro1 from "@/assets/product/pro1.png"
 
-export default function ProductList() {
+const ProductList = () => {
     const [open, setOpen] = useState('');
     const [isHovered, setIsHovered] = useState(false)
 
@@ -135,3 +135,5 @@ export default function ProductList() {
     </>
   )
 }
+
+export default ProductList

@@ -10,8 +10,8 @@ import Link from "next/link";
       >
         <div className="mx-auto w-11/12 px-4 py-8 sm:px-6 lg:col-span-3 lg:px-8">
           <div className="">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-              <div className="flex w-full justify-center md:justify-start text-center md:text-left">
+            <div className="grid grid-cols-2 gap-4 md:gap-4 md:grid-cols-4">
+              <div className="flex w-full justify-center2 md:justify-start text-left md:text-left">
                 <nav
                   aria-label="Footer Navigation - Services"
                   className="flex flex-col space-y-3 mt-6"
@@ -86,7 +86,7 @@ import Link from "next/link";
                 </nav>
               </div>
 
-              <div className="flex w-full justify-center md:justify-start text-center md:text-left">
+              <div className="flex w-full justify-center2 md:justify-start text-left md:text-left">
                 <nav
                   aria-label="Footer Navigation - Company"
                   className="flex flex-col space-y-3 mt-6"
@@ -149,7 +149,7 @@ import Link from "next/link";
                 </nav>
               </div>
 
-              <div className="flex w-full justify-center md:justify-start text-center md:text-left">
+              <div className="flex w-full justify-center2 md:justify-start text-left md:text-left">
                 <nav
                   aria-label="Footer Navigation - Services"
                   className="flex flex-col space-y-3 mt-6"
@@ -216,7 +216,7 @@ import Link from "next/link";
                 </nav>
               </div>
 
-              <div className="flex w-full justify-center md:justify-start text-center md:text-left">
+              <div className="flex w-full justify-center2 md:justify-start text-left md:text-left">
                 <nav
                   aria-label="Footer Navigation - Company"
                   className="flex flex-col space-y-3 mt-6"
@@ -362,7 +362,7 @@ import Link from "next/link";
               </nav>
 
               <p className="mt-8 text-sm font-mabrybold text-white sm:mt-0">
-                &copy; 2023, GiftLab. All Right Reserved
+                &copy; 2023, Petco. All Right Reserved
               </p>
             </div>
           </div>

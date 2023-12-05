@@ -12,7 +12,7 @@ import price from "@/assets/icons/price.svg"
 const BreedNav = () => {
   return (
     <>
-        <div className="shadow-lg bg-[#FFE5DD] mb-5">
+        <div className="shadow-lg bg-[#FFE5DD] mb-5 sticky top-0 z-20">
           <div className='mx-auto w-full md:w-10/12'>
           <ul className="flex overflow-x-auto overflow-hidden items-center md:justify-center2 space-x-1 md:space-x-3  tracking-tight font-semibold text-sm text-[#b6cce2] shadow2">
             <li className="border-b-4 border-pink-500  md:-mt-px">

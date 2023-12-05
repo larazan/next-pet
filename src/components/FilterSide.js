@@ -293,6 +293,13 @@ const FilterSide = ({ isOpen, handleClose, setIsOpen }) => {
               </div>
             </div>
           </Accordion>
+          <div>
+          <div
+            className="bg-[#073d30] hover:opacity-80 uppercase  rounded text-white border border-[#073d30] flex p-3 justify-center items-center w-full font-semibold cursor-pointer"
+          >
+            Filter
+          </div>
+          </div>
         </div>
       </div>
       {isOpen ? (
