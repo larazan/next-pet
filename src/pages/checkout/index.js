@@ -32,9 +32,12 @@ export default function Checkout() {
                 type="text"
                 id="email"
                 name="email"
-                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3  text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-red-400 px-4 py-3  text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Email"
               />
+            </div>
+            <div>
+              <span className="text-sm text-red-500">Enter a valid email</span>
             </div>
             <div className="mt-2">
                 <div className="inline-flex items-center">
@@ -50,14 +53,14 @@ export default function Checkout() {
                 type="text"
                 id="card-holder"
                 name="card-holder"
-                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-gray-300 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="First name"
               />
               <input
                 type="text"
                 id="card-holder"
                 name="card-holder"
-                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-gray-300 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Last name"
               />
             </div>
@@ -66,7 +69,7 @@ export default function Checkout() {
                 type="text"
                 id="card-holder"
                 name="card-holder"
-                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-gray-300 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Address"
               />
               </div>
@@ -75,13 +78,13 @@ export default function Checkout() {
                   type="text"
                   id="card-holder"
                   name="card-holder"
-                  className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                  className="w-full rounded-md bg-white border border-gray-300 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                   placeholder="City"
                 />
               </div>
               <div className="mt-2 flex space-x-1">
               <div className="md:col-span-2">
-                <div className="bg-white flex border border-gray-200 rounded-md shadow-sm items-center mt-0">
+                <div className="bg-white flex border border-gray-300 rounded-md shadow-sm items-center mt-0">
                   <input name="country" id="country" placeholder="Country" className="px-4 py-3 appearance-none outline-none text-gray-800 w-full bg-transparent" value="" />
                   <button tabindex="-1" className="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
                     <svg className="w-5 h-5 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -89,13 +92,13 @@ export default function Checkout() {
                       <line x1="6" y1="6" x2="18" y2="18"></line>
                     </svg>
                   </button>
-                  <button tabindex="-1" for="show_more" className="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600">
+                  <button tabindex="-1" for="show_more" className="cursor-pointer outline-none focus:outline-none border-l border-gray-300 transition-all text-gray-300 hover:text-blue-600">
                     <svg className="w-5 h-5 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
                   </button>
                 </div>
               </div>
               <div className="md:col-span-2">
-                <div className="bg-white flex border border-gray-200 rounded-md shadow-sm items-center mt-0">
+                <div className="bg-white flex border border-gray-300 rounded-md shadow-sm items-center mt-0">
                   <input name="state" id="state" placeholder="State" className="px-4 py-3 appearance-none outline-none text-gray-800 w-full bg-transparent" value="" />
                   <button tabindex="-1" className="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
                     <svg className="w-5 h-5 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -103,7 +106,7 @@ export default function Checkout() {
                       <line x1="6" y1="6" x2="18" y2="18"></line>
                     </svg>
                   </button>
-                  <button tabindex="-1" for="show_more" className="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600">
+                  <button tabindex="-1" for="show_more" className="cursor-pointer outline-none focus:outline-none border-l border-gray-300 transition-all text-gray-300 hover:text-blue-600">
                     <svg className="w-5 h-5 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
                   </button>
                 </div>
@@ -114,13 +117,13 @@ export default function Checkout() {
                   type="text"
                   id="card-holder"
                   name="card-holder"
-                  className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                  className="w-full rounded-md bg-white border border-gray-300 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                   placeholder="Postal Code"
                 />
               </div>
               <div className="mt-2">
                 <div className="inline-flex items-center">
-                  <input type="checkbox" name="" id="" className="border-gray-200 bg-white shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" />
+                  <input type="checkbox" name="" id="" className="border-gray-300 bg-white shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" />
                   <label for="" className="text-sm ml-2 text-gray-500">Save this information for next time</label>
                 </div>
               </div>
@@ -203,7 +206,7 @@ export default function Checkout() {
                 type="text"
                 id="discount"
                 name="discount"
-                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-gray-300 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Discount code"
               />
               <button className=" w-40 rounded-md bg-[#fbd718] hover:opacity-90 px-3 py-3 font-medium text-gray-900">

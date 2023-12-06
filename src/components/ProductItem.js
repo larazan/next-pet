@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 import product1 from "@/assets/product/pro1.png";
 
 const ProductItem = () => {
+  const [count, setCount] = useState(0);
+
+  const handleSubtractOne = () => {
+    setCount(count - 1);
+ }
+
+ const handleAddOne = () => {
+  setCount(count + 1);
+}
+
   return (
     <>
       <div className="flex gap-x-4 py-2 lg:px-6 border-b border-gray-200 w-full font-light text-gray-500">
@@ -51,6 +61,7 @@ const ProductItem = () => {
                 <div className="flex  flex-row h-8 w-full rounded-lg relative bg-transparent mt-1">
                   <button
                     data-action="decrement"
+                    onClick={handleSubtractOne}
                     className="flex items-center bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 rounded-l cursor-pointer outline-none"
                   >
                     <span className="m-auto text-2xl font-thin">
@@ -74,10 +85,11 @@ const ProductItem = () => {
                     type="number"
                     className=" text-center w-full bg-gray-100 font-semibold text-sm hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
                     name="custom-input-number"
-                    value="0"
+                    value={count}
                   />
                   <button
                     data-action="increment"
+                    onClick={handleAddOne}
                     className="flex items-center bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 rounded-r cursor-pointer"
                   >
                     <span className="m-auto text-2xl font-thin">

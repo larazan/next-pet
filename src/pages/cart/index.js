@@ -56,7 +56,7 @@ export default function Cart() {
                     Subtotal
                   </div>
                   <div className="text-md md:text-lg font-medium text-black">
-                    &#8377;200
+                  £200
                   </div>
                 </div>
                 <div className="text-sm md:text-md py-3 text-slate-900">
