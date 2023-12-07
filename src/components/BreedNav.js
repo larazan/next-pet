@@ -16,7 +16,7 @@ const BreedNav = () => {
           <div className='mx-auto w-full md:w-10/12'>
           <ul className="flex overflow-x-auto overflow-hidden items-center md:justify-center2 space-x-1 md:space-x-3  tracking-tight font-semibold text-sm text-[#b6cce2] shadow2">
             <li className="border-b-4 border-pink-500  md:-mt-px">
-              <Link className="flex items-center md:space-x-2  p-3" href="/account/show">
+              <Link className="flex items-center md:space-x-2  p-3" href="#origin">
                 <Image src={origins} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">
                   Origins & History
@@ -24,7 +24,7 @@ const BreedNav = () => {
               </Link>
             </li>
             <li className="border-b-4 border-[#FFE5DD]  md:-mt-px">
-              <Link className="flex items-center space-x-2 p-3" href="/account/profile">
+              <Link className="flex items-center space-x-2 p-3" href="#physical">
                 <Image src={physic} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">
                   Physical character
@@ -32,7 +32,7 @@ const BreedNav = () => {
               </Link>
             </li>
             <li className="border-b-4 border-[#FFE5DD] md:-mt-px">
-              <Link className="flex items-center space-x-2 p-3" href="/account/preferences">
+              <Link className="flex items-center space-x-2 p-3" href="#temperament">
               <Image src={personality} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">
                   Temperament
@@ -40,7 +40,7 @@ const BreedNav = () => {
               </Link>
             </li>
             <li className="border-b-4 border-[#FFE5DD]  md:-mt-px">
-              <Link className="flex items-center space-x-2 p-3" href="/account/orders">
+              <Link className="flex items-center space-x-2 p-3" href="#price">
               <Image src={price} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">
                   Price
@@ -48,7 +48,7 @@ const BreedNav = () => {
               </Link>
             </li>
             <li className="border-b-4 border-[#FFE5DD]  md:-mt-px">
-              <Link className="flex items-center space-x-2 p-3" href="/account/password">
+              <Link className="flex items-center space-x-2 p-3" href="#health">
               <Image src={care} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">
                   Health

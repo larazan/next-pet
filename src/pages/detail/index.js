@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -13,8 +13,19 @@ import detail3 from "@/assets/product/detail3.png";
 import Ingredient from "@/components/Ingredient";
 import Info from "@/components/Info";
 import Popular from "@/components/Popular";
+import ProductSlider from "@/components/ProductSlider";
 
 export default function Detail() {
+  const [count, setCount] = useState(0);
+
+  const handleSubtractOne = () => {
+    setCount(count - 1);
+ }
+
+ const handleAddOne = () => {
+  setCount(count + 1);
+}
+
   return (
     <>
       <Head>
@@ -27,10 +38,11 @@ export default function Detail() {
       <GoTop />
 
       <div className="flex relative z-10 items-center overflow-hidden bg-white">
-        <div className="flex w-full">
-          <div className="w-1/2 bg-white">
-            <div className="flex justify-center items-center">
-              <Image src={detail1} alt="" className="object-cover" />
+        <div className="flex w-full items-center2 justify-center2 bg-[#f1f1f3]">
+          <div className="w-1/2 h-full bg-[#f1f1f3]">
+            <div className="flex h-full justify-center items-center">
+              {/* <Image src={detail1} alt="" className="object-cover" /> */}
+              <ProductSlider />
             </div>
           </div>
           <div className="w-1/2 flex flex-col px-10 py-4 bg-[#f1f1f3]">
@@ -102,6 +114,7 @@ export default function Detail() {
               <div className="flex h-14 border-x-2 border-t-2 border-gray-900">
                 <button
                   data-action="decrement"
+                  onClick={handleSubtractOne}
                   class="flex bg-[#f1f1f3] text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 cursor-pointer outline-none"
                 >
                   <span class="m-auto text-2xl font-thin">
@@ -123,12 +136,14 @@ export default function Detail() {
                 </button>
                 <input
                   type="number"
-                  class="outline-none focus:outline-none text-center w-full bg-[#f1f1f3] font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
+                  class="outline-none2 focus:outline-none text-center w-full bg-[#f1f1f3] font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
                   name="custom-input-number"
-                  value="0"
+                  value={count}
+                  readOnly
                 ></input>
                 <button
                   data-action="increment"
+                  onClick={handleAddOne}
                   class="flex bg-[#f1f1f3] text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 cursor-pointer"
                 >
                   <span class="m-auto text-2xl font-thin">

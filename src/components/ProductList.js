@@ -98,7 +98,7 @@ const ProductList = () => {
           {productData.map((data, index) => {
             return (
               <Link
-                href={`/shop/${data.slug}`}
+                href={`/detail`}
                 className="transform overflow-hidden bg-transparent duration-200 hover:scale-105 cursor-pointer"
                 key={index}
               >

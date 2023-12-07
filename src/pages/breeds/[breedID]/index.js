@@ -367,41 +367,40 @@ export default function Detail() {
         </div>
         <BreedNav />
 
-
         <div className="flex flex-row w-full">
           <div className="flex flex-1 flex-col items-center justify-center relative">
             <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
-              
               <section className="w-full mx-auto  mt-2 md:mt-4 px-5 markdown-blog">
-                <div className="flex justify-between items-center pb-4">
-                {/* breadcrumb */}
-                <nav className="text-sm my-1" aria-label="Breadcrumb">
-                  <ol className="list-none p-0 inline-flex">
-                    <li className="flex items-center">
-                      <a href="#" className="uppercase text-gray-900 font-bold">
-                      CATS & KITTENS
-                      </a>
-                      <svg
-                        className="fill-current text-gray-900 w-2 h-2 mx-1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 320 512"
-                      >
-                        <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
-                      </svg>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="text-gray-900 uppercase font-bold"
-                        aria-current="page"
-                      >
-                        CAT BREEDS
-                      </a>
-                    </li>
-                  </ol>
-                </nav>
+                <div className="flex w-full items-center pb-4">
+                  {/* breadcrumb */}
+                  <nav className="w-1/2 flex text-sm my-1 " aria-label="Breadcrumb">
+                    <ol className="list-none p-0 inline-flex">
+                      <li className="flex items-center">
+                        <a
+                          href="#"
+                          className="uppercase text-gray-900 font-bold"
+                        >
+                          CAT BREEDS
+                        </a>
+                        <svg
+                          className="fill-current text-gray-900 w-2 h-2 mx-1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                        </svg>
+                      </li>
+                      <li>
+                        <span className="text-gray-900 uppercase font-semibold">
+                          Scottish Fold
+                        </span>
+                        
+                      </li>
+                      
+                    </ol>
+                  </nav>
 
-                <div className="font-mabry">
+                  <div className="w-1/2 justify-end flex font-mabry">
                     <div className=" flex justify-between items-center text-base md:text-sm text-green-500 font-bold">
                       <div className="flex justify-end space-x-2">
                         <button>
@@ -454,9 +453,8 @@ export default function Detail() {
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  </div>
-                
                 <div>
                   <Image
                     src={scottish}
@@ -466,254 +464,273 @@ export default function Detail() {
                 </div>
                 <article>
                   <p>
-                  The American Bobtail is the result of a genetic mutation. The breed appeared spontaneously, with no human intervention. They are by no means a crossbreed, and have no relation to the Japanese Bobtail. Humans simply selected individuals with the same characteristically shorter tail, in order to define the features of the breed and grant it a pedigree. So while this Lynx-like cat may look like a wild feline, this is only in appearance: they are purely domestic cats at heart.
+                    The American Bobtail is the result of a genetic mutation.
+                    The breed appeared spontaneously, with no human
+                    intervention. They are by no means a crossbreed, and have no
+                    relation to the Japanese Bobtail. Humans simply selected
+                    individuals with the same characteristically shorter tail,
+                    in order to define the features of the breed and grant it a
+                    pedigree. So while this Lynx-like cat may look like a wild
+                    feline, this is only in appearance: they are purely domestic
+                    cats at heart.
                   </p>
-                  
                 </article>
 
                 <article>
-                  <div className="flex items-center space-x-2">
-                    <Image src={origins} alt="" />
-                    <span className="text-2xl font-semibold">
-                      Origins & history
-                    </span>
-                  </div>
-                  <p>
-                    The American Bobtail is a very recent natural breed. Legend
-                    has it that the patriarch of the breed is a brown tabby
-                    kitten with a tiny tail that was wandering around a reserve
-                    in Arizona in the late sixties. A young American couple on
-                    holiday, the Sanders, fell under his spell. They named him
-                    Yodi and brought him home with them in Iowa. Yodi wooed the
-                    family's cat, a colour-pointed kitten without a pedigree,
-                    who then gave birth to a litter of short-tailed kittens. A
-                    friend of the Sanders was intrigued by these peculiar
-                    kittens and decided to turn them into an official breed.
-                    Domestic cats with the characteristic short tail were found
-                    throughout the United States and Canada, and their breeders
-                    simply helped nature along by breeding these cats together.
-                    Along the way, a long-haired cat was introduced into the
-                    lineage, which led to the appearance of a variant of the
-                    American Bobtail with mid-length hair.
-                  </p>
-                  <p>
-                    It can improve your overall mood and help you feel happier
-                    and more positive. Plus, taking care of yourself can help
-                    you be more productive and focused, leading to better
-                    relationships with the people around you. Self-care is truly
-                    the gift that keeps on giving!
-                  </p>
-
-                  <div className="flex items-center space-x-2">
-                    <Image src={physic} alt="" />
-                    <span className="text-2xl font-semibold">
-                      Physical characteristics
-                    </span>
-                  </div>
-                  <div className="flex py-3 flex-col space-y-1">
-                  <div>
-                    <span className="text-[18px] font-bold">Coat colour</span>
-                  </div>
-                  <div className="flex flex-wrap space-x-2">
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={blackHair} alt="" />
-                        <span>Black</span>
+                  <section id="origin">
+                    <div className="flex items-center space-x-2">
+                      <Image src={origins} alt="" />
+                      <span className="text-2xl font-semibold">
+                        Origins & history
+                      </span>
+                    </div>
+                    <p>
+                      The American Bobtail is a very recent natural breed.
+                      Legend has it that the patriarch of the breed is a brown
+                      tabby kitten with a tiny tail that was wandering around a
+                      reserve in Arizona in the late sixties. A young American
+                      couple on holiday, the Sanders, fell under his spell. They
+                      named him Yodi and brought him home with them in Iowa.
+                      Yodi wooed the family's cat, a colour-pointed kitten
+                      without a pedigree, who then gave birth to a litter of
+                      short-tailed kittens. A friend of the Sanders was
+                      intrigued by these peculiar kittens and decided to turn
+                      them into an official breed. Domestic cats with the
+                      characteristic short tail were found throughout the United
+                      States and Canada, and their breeders simply helped nature
+                      along by breeding these cats together. Along the way, a
+                      long-haired cat was introduced into the lineage, which led
+                      to the appearance of a variant of the American Bobtail
+                      with mid-length hair.
+                    </p>
+                    <p>
+                      It can improve your overall mood and help you feel happier
+                      and more positive. Plus, taking care of yourself can help
+                      you be more productive and focused, leading to better
+                      relationships with the people around you. Self-care is
+                      truly the gift that keeps on giving!
+                    </p>
+                  </section>
+                  <section id="physical">
+                    <div className="flex items-center space-x-2">
+                      <Image src={physic} alt="" />
+                      <span className="text-2xl font-semibold">
+                        Physical characteristics
+                      </span>
+                    </div>
+                    <div className="flex py-3 flex-col space-y-1">
+                      <div>
+                        <span className="text-[18px] font-bold">
+                          Coat colour
+                        </span>
                       </div>
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={blueHair} alt="" />
-                        <span>Blue</span>
+                      <div className="flex flex-wrap space-x-2">
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={blackHair} alt="" />
+                          <span>Black</span>
+                        </div>
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={blueHair} alt="" />
+                          <span>Blue</span>
+                        </div>
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={brownHair} alt="" />
+                          <span>Brown</span>
+                        </div>
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={creamHair} alt="" />
+                          <span>Cream</span>
+                        </div>
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={gingerHair} alt="" />
+                          <span>Red</span>
+                        </div>
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={whiteHair} alt="" />
+                          <span>White</span>
+                        </div>
                       </div>
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={brownHair} alt="" />
-                        <span>Brown</span>
+                    </div>
+                    <div className="flex py-3 flex-col space-y-1">
+                      <div>
+                        <span className="text-[18px] font-bold">
+                          Eye colour
+                        </span>
                       </div>
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={creamHair} alt="" />
-                        <span>Cream</span>
+                      <div className="flex flex-wrap space-x-2">
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={blueEye} alt="" />
+                          <span>Blue</span>
+                        </div>
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={greenEye} alt="" />
+                          <span>Green</span>
+                        </div>
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={yellowEye} alt="" />
+                          <span>Yellow</span>
+                        </div>
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={brownEye} alt="" />
+                          <span>Brown</span>
+                        </div>
+                        <div className="w-16 flex flex-col space-y-1 items-center justify-center">
+                          <Image src={wallEye} alt="" />
+                          <span>Odd</span>
+                        </div>
                       </div>
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={gingerHair} alt="" />
-                        <span>Red</span>
+                    </div>
+                    <h3>Description</h3>
+                    <p>
+                      The American Bobtail is a medium to large, semi-cobby cat.
+                      Their sturdy bone structure and well-developed
+                      musculature, along with their broad chest and slightly
+                      arched back (due to longer hind than front legs), give
+                      them the appearance of a small Lynx. Their head is broad
+                      with prominent cheeks and a strong chin, and a
+                      triangular-shaped muzzle a little wider than it is long.
+                      Their eyes are big and slightly almond-shaped. Their ears,
+                      which are average sized and sit quite low on the skull,
+                      each have a small tuft of fur at the end known as “Lynx
+                      tips”. The variety with mid-length fur also have tufts of
+                      fur between the toes.
+                    </p>
+                    <p>
+                      But the main feature of this cat is of course their tail!
+                      Never absent, but always short, the maximum length is
+                      generally towards the tip of the tarsus (the hock). It is
+                      covered with fairly long, thick and shaggy fur. It is also
+                      extremely expressive, and will hide nothing about the
+                      emotional state of its owner.
+                    </p>
+                  </section>
+
+                  <section id="temperament">
+                    <div className="mb-10">
+                      <div className="flex items-center space-x-2">
+                        <Image src={personality} alt="" />
+                        <span className="text-2xl font-semibold">
+                          Temperament
+                        </span>
                       </div>
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={whiteHair} alt="" />
-                        <span>White</span>
-                      </div>
-                  </div>
-                  </div>
-                  <div className="flex py-3 flex-col space-y-1">
-                  <div>
-                    <span className="text-[18px] font-bold">Eye colour</span>
-                  </div>
-                  <div className="flex flex-wrap space-x-2">
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={blueEye} alt="" />
-                        <span>Blue</span>
-                      </div>
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={greenEye} alt="" />
-                        <span>Green</span>
-                      </div>
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={yellowEye} alt="" />
-                        <span>Yellow</span>
-                      </div>
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={brownEye} alt="" />
-                        <span>Brown</span>
-                      </div>
-                      <div className="w-16 flex flex-col space-y-1 items-center justify-center">
-                        <Image src={wallEye} alt="" />
-                        <span>Odd</span>
-                      </div>
-                      
-                  </div>
-                  </div>
-                  <h3>Description</h3>
-                  <p>
-                    The American Bobtail is a medium to large, semi-cobby cat.
-                    Their sturdy bone structure and well-developed musculature,
-                    along with their broad chest and slightly arched back (due
-                    to longer hind than front legs), give them the appearance of
-                    a small Lynx. Their head is broad with prominent cheeks and
-                    a strong chin, and a triangular-shaped muzzle a little wider
-                    than it is long. Their eyes are big and slightly
-                    almond-shaped. Their ears, which are average sized and sit
-                    quite low on the skull, each have a small tuft of fur at the
-                    end known as “Lynx tips”. The variety with mid-length fur
-                    also have tufts of fur between the toes.
-                  </p>
-                  <p>
-                    But the main feature of this cat is of course their tail!
-                    Never absent, but always short, the maximum length is
-                    generally towards the tip of the tarsus (the hock). It is
-                    covered with fairly long, thick and shaggy fur. It is also
-                    extremely expressive, and will hide nothing about the
-                    emotional state of its owner.
-                  </p>
 
-<div className="mb-10">
-                  <div className="flex items-center space-x-2">
-                    <Image src={personality} alt="" />
-                    <span className="text-2xl font-semibold">Temperament</span>
-                  </div>
+                      <dl className="w-full mt-2 space-y-3 divide-y divide-gray-300">
+                        {temperaments.map((data, index) => {
+                          return (
+                            <DropItem
+                              key={index}
+                              open={index === open}
+                              title={data.title}
+                              desc={data.desc}
+                              image={data.image}
+                              score={data.score}
+                              rate={data.rate}
+                              toggle={() => toggle(index)}
+                            />
+                          );
+                        })}
+                      </dl>
 
-                  <dl className="w-full mt-2 space-y-3 divide-y divide-gray-300">
-                    {temperaments.map((data, index) => {
-                      return (
-                        <DropItem
-                          key={index}
-                          open={index === open}
-                          title={data.title}
-                          desc={data.desc}
-                          image={data.image}
-                          score={data.score}
-                          rate={data.rate}
-                          toggle={() => toggle(index)}
-                        />
-                      );
-                    })}
-                  </dl>
+                      <h3>Behaviour of the American Bobtail</h3>
+                      <dl className="w-full mt-2 space-y-3 divide-y divide-gray-300">
+                        {behaviours.map((data, index) => {
+                          return (
+                            <DropItem
+                              key={index}
+                              open={index === openBehaviour}
+                              title={data.title}
+                              desc={data.desc}
+                              image={data.image}
+                              score={data.score}
+                              rate={data.rate}
+                              toggle={() => toggleBehaviour(index)}
+                            />
+                          );
+                        })}
+                      </dl>
 
-                  <h3>Behaviour of the American Bobtail</h3>
-                  <dl className="w-full mt-2 space-y-3 divide-y divide-gray-300">
-                    {behaviours.map((data, index) => {
-                      return (
-                        <DropItem
-                          key={index}
-                          open={index === openBehaviour}
-                          title={data.title}
-                          desc={data.desc}
-                          image={data.image}
-                          score={data.score}
-                          rate={data.rate}
-                          toggle={() => toggleBehaviour(index)}
-                        />
-                      );
-                    })}
-                  </dl>
+                      <h3>Compatibility</h3>
+                      <dl className="w-full mt-2 space-y-3 divide-y divide-gray-300">
+                        {compability.map((data, index) => {
+                          return (
+                            <DropItem
+                              key={index}
+                              open={index === openCompatibility}
+                              title={data.title}
+                              desc={data.desc}
+                              image={data.image}
+                              score={data.score}
+                              rate={data.rate}
+                              toggle={() => toggleCompatibility(index)}
+                            />
+                          );
+                        })}
+                      </dl>
+                    </div>
+                  </section>
 
-                  <h3>Compatibility</h3>
-                  <dl className="w-full mt-2 space-y-3 divide-y divide-gray-300">
-                    {compability.map((data, index) => {
-                      return (
-                        <DropItem
-                          key={index}
-                          open={index === openCompatibility}
-                          title={data.title}
-                          desc={data.desc}
-                          image={data.image}
-                          score={data.score}
-                          rate={data.rate}
-                          toggle={() => toggleCompatibility(index)}
-                        />
-                      );
-                    })}
-                  </dl>
+                  <section id="price" className="px-5 py-4 rounded-lg bg-[#7ce993]">
+                    <div className="flex items-center space-x-2">
+                      <Image src={price} alt="" />
+                      <span className="text-2xl font-semibold">Price</span>
+                    </div>
 
-                  </div>
+                    <p>
+                      The average purchase price varies between £450 and £750.
+                      Lineage, age, sex, color, etc. are all factors that can
+                      change the price. For the monthly budget, the required
+                      spend will be around £25 to £35 per month.
+                    </p>
+                  </section>
 
-                  <div>
-                  <div className="flex items-center space-x-2">
-                    <Image src={price} alt="" />
-                    <span className="text-2xl font-semibold">
-                    Price
-                    </span>
-                  </div>
-                  
-                  <p>The average purchase price varies between £450 and £750. Lineage, age, sex, color, etc. are all factors that can change the price. For the monthly budget, the required spend will be around £25 to £35 per month.</p>
-                  </div>
+                  <section id="health">
+                    <div className="flex items-center space-x-2">
+                      <Image src={care} alt="" />
+                      <span className="text-2xl font-semibold">
+                        Health of the American Bobtail
+                      </span>
+                    </div>
+                    <h3>Life expectancy</h3>
+                    <p>They live on average 15 years or more.</p>
+                    <h3>Strong / robust</h3>
+                    <p>
+                      A true North American cat, they are robust and resistant.
+                    </p>
 
-                    <div>
-                  <div className="flex items-center space-x-2">
-                    <Image src={care} alt="" />
-                    <span className="text-2xl font-semibold">
-                      Health of the American Bobtail
-                    </span>
-                  </div>
-                  <h3>Life expectancy</h3>
-                  <p>They live on average 15 years or more.</p>
-                  <h3>Strong / robust</h3>
-                  <p>
-                    A true North American cat, they are robust and resistant.
-                  </p>
+                    <h3>Tendency to put on weight</h3>
+                    <p>
+                      Being a little on the lazy side, they can be more prone to
+                      chubbiness.
+                    </p>
 
-                  <h3>Tendency to put on weight</h3>
-                  <p>
-                    Being a little on the lazy side, they can be more prone to
-                    chubbiness.
-                  </p>
+                    <h3>Common illnesses</h3>
+                    <p>
+                      Reputed for their iron constitution, American Bobtails are
+                      rarely sick. They are not, however, immune to the health
+                      problems found in all cats. They have a certain
+                      vulnerability to periodontal disease (gingivitis and
+                      tartar), so preventative measures and dental care are
+                      recommended. There are also certain illnesses associated
+                      with this particular breed:
+                    </p>
 
-                  <h3>Common illnesses</h3>
-                  <p>
-                    Reputed for their iron constitution, American Bobtails are
-                    rarely sick. They are not, however, immune to the health
-                    problems found in all cats. They have a certain
-                    vulnerability to periodontal disease (gingivitis and
-                    tartar), so preventative measures and dental care are
-                    recommended. There are also certain illnesses associated
-                    with this particular breed:
-                  </p>
+                    <ul className="list-disc ml-4">
+                      <li>
+                        Hip dysplasia, which causes a lameness of one or more
+                        hind legs.
+                      </li>
+                      <li>
+                        There is also a slightly higher risk of spine problems
+                        due to the genetic mutation that shortened the tail.
+                      </li>
+                    </ul>
 
-                  <ul className="list-disc ml-4">
-                    <li>
-                      Hip dysplasia, which causes a lameness of one or more hind
-                      legs.
-                    </li>
-                    <li>
-                      There is also a slightly higher risk of spine problems due
-                      to the genetic mutation that shortened the tail.
-                    </li>
-                  </ul>
-
-                  <h3>Reproduction</h3>
-                  <p>
-                    There are no unique characteristics about the reproduction
-                    of this breed.
-                  </p>
-                  </div>
-
-                  
+                    <h3>Reproduction</h3>
+                    <p>
+                      There are no unique characteristics about the reproduction
+                      of this breed.
+                    </p>
+                  </section>
                 </article>
               </section>
 

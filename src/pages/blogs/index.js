@@ -81,7 +81,7 @@ export default function Blogs() {
               
               <section className="w-full mx-auto  mt-10 md:mt-10 px-5 ">
                 <Link
-                  href={""}
+                  href={"/blogs/3"}
                   className="text-3xl font-bold tracking-tighter md:text-5xl lg:text-7xl text-black hover:text-indigo-600"
                 >
                   Apples New MacBook Air Is $200 More — and Probably Worth It
@@ -100,7 +100,7 @@ export default function Blogs() {
                     <div className="w-full rounded p-4 bg-[##14ada8]">
                       <div className="flex flex-col space-y-1 md:space-y-2">
                         <Link
-                          href={""}
+                          href={"/blogs/3"}
                           className="my-[0.25em] mx-[0em] overflow-hidden break-words text-md md:text-lg leading-tight md:leading-tight font-semibold text-gray-900 hover:text-indigo-600"
                         >
                           Apple&apos;s iPhone 15 Event Recap: New Phones, New
@@ -133,7 +133,7 @@ export default function Blogs() {
                               <div
                                 className="m-0 mr-2 md:mr-5 flex aspect-[16/9] md:aspect-[16/9] h-fit flex-1 items-center justify-center"
                               >
-                                <Link href={""} >
+                                <Link href={"/blogs/3"} >
                                 <Image
                                   alt=""
                                   src={data.image}
@@ -148,7 +148,7 @@ export default function Blogs() {
                                 </div>
                                 <Link
                                   href={
-                                    ""
+                                    "/blogs/3"
                                   }
                                   className="text-gray-900 hover:text-indigo-600"
                                 >

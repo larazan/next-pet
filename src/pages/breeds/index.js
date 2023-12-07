@@ -728,10 +728,10 @@ export default function Breeds() {
             <div>
                 <span className='font-semibold text-black'>Find a topic by its first letter:</span>
             </div>
-            <div className="flex flex-wrap mx-auto w-full md:w-12/12 space-x-2 items-center">
+            <div className="flex flex-wrap justify-left mx-auto w-full md:w-12/12  items-center">
                 {letters.map((data,index) => {
                     return (
-<Link href={""} className='flex justify-center items-center mb-1.5 w-8 h-8 hover:bg-blue-800 px-2 py-1 border-2 text-gray-900 hover:text-white border-gray-900'>
+<Link href={""} key={index} className='flex mr-2 mt-2 justify-center items-center mb-1.5 w-8 h-8 hover:bg-blue-800 px-2 py-1 border-2 text-gray-900 hover:text-white border-gray-900'>
                     <span className='uppercase font-bold'>{data.title}</span>
                 </Link>
                     )
@@ -744,19 +744,15 @@ export default function Breeds() {
             <div className='py-2'>
                 <span className='p-2 w-12 h-12 flex justify-center items-center bg-black text-white text-2xl font-bold'>A</span>
             </div>
-            <div className='grid grid-cols-3 gap-1'>
-                <Link href={""} className='border-t py-1.5 border-slate-500 hover:underline hover:underline-offset-1 text-lg font-semibold text-black'>
-                    <span className=''>Abyssinian</span>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
+                {catBreeds.map((data,index) => {
+                    return (
+                        <Link href={"/breeds/angora"} key={index} className='border-t py-1 border-slate-500 hover:underline hover:underline-offset-1 text-lg font-semibold text-black'>
+                    <span className=''>{data}</span>
                 </Link>
-                <Link href={""} className='border-t py-1.5 border-slate-500 hover:underline hover:underline-offset-1 text-lg font-semibold text-black'>
-                    <span className=''>Abyssinian</span>
-                </Link>
-                <Link href={""} className='border-t py-1.5 border-slate-500 hover:underline hover:underline-offset-1 text-lg font-semibold text-black'>
-                    <span className=''>Abyssinian</span>
-                </Link>
-                <Link href={""} className='border-t py-1.5 border-slate-500 hover:underline hover:underline-offset-1 text-lg font-semibold text-black'>
-                    <span className=''>Abyssinian</span>
-                </Link>
+                    )
+                })}
+                
             </div>
         </div>
 

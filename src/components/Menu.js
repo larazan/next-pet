@@ -356,7 +356,7 @@ const Menu = ({
           </Accordion>
           <div className={` py-0 flex flex-col w-full `}>
             <Link href={"/blogs"} className="flex items-center justify-between h-12 px-3 text-base md:text-[18px] font-semibold md:font-bold">
-              <span>Blog</span>
+              <span>Blogs</span>
             </Link>
           </div>
         </div>

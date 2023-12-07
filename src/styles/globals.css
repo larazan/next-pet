@@ -135,6 +135,12 @@ menu, ol, ul {
   margin-bottom: 2.25rem;
 }
 
+.markdown-blog section {
+  position: relative;
+  margin-top: 2.85rem;
+  margin-bottom: 2.25rem;
+}
+
 .text-tundora {
   --tw-text-opacity: 1!important;
   color: rgb(74 74 74/var(--tw-text-opacity))!important;

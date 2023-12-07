@@ -157,7 +157,7 @@ const PopularBreed = () => {
                   >
                     <div className="flex w-[260px] ">
                       <div className="rounded bg-transparent border border-gray-800 shadow-stack-sm group flex flex-col overflow-hidden  ">
-                        <Link href="/" className="relative">
+                        <Link href="/breeds/angora" className="relative">
                           <Image
                             src={data.image}
                             alt=""
@@ -167,7 +167,7 @@ const PopularBreed = () => {
                         </Link>{" "}
                         <div className="px-3 py-2 flex flex-col justify-between leading-tight">
                           <h3 className="my-[0.25em] mx-[0em] overflow-hidden break-words text-md md:text-lg leading-tight md:leading-tight font-semibold capitalize">
-                            <Link href="/">{data.title}</Link>
+                            <Link href="/breeds/angora">{data.title}</Link>
                           </h3>{" "}
                           <div className="font-mabry text-xs">
                             May 9th, 2023

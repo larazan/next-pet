@@ -55,7 +55,7 @@ const Header = () => {
                 <Image src={logo} alt="" className="w-28 md:w-40" />
               </Link>
             </div>
-            <div className="w-1/6 flex space-x-1 items-center justify-end md:hidden">
+            <div className="w-1/6 flex space-x-1.5 items-center justify-end md:hidden">
               <div className="">
                 <button
                   className="flex relative"
@@ -88,7 +88,7 @@ const Header = () => {
                 onClick={handleClick}
               >
                 <svg
-                  className="fill-current text-gray-700 w-5 h-5"
+                  className="fill-current text-gray-700 w-6 h-6 font-semibold"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -172,7 +172,7 @@ const Header = () => {
               type="search"
               placeholder="Search..."
               autofocus="autofocus"
-              className="w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl"
+              className="w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-md lg:text-2xl"
             />
           </div>
         </div>

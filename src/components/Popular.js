@@ -211,7 +211,7 @@ const Popular = () => {
                   <div className="flex flex-col space-y-2 w-[130px] md:w-[230px]  justify-center bg-white2 border2 shadow2 ">
                     <div className="relative w-full h-56 bg-gray-200  flex ">
                       <Link
-                        href="/shop/product-2"
+                        href="/detail"
                         className="flex p-4 w-full justify-center items-center"
                       >
                         <div className="w-full flex justify-center items-center">
@@ -228,7 +228,7 @@ const Popular = () => {
                     </div>
                     <div className="flex flex-col justify-center2 items-center2">
                       <div className="flex text-center2 leading-tight">
-                        <Link href={"/shop/product-2"}>
+                        <Link href={"/detail"}>
                           <span className="font-bold text-[14px] md:text-[14px] text-[#002f6c]  hover:underline">
                             {data.title}
                           </span>

@@ -174,7 +174,7 @@ export default function Category() {
                 key={index}
               >
                 <div className=" bg-[#f1ebdc] rounded-b group flex flex-col overflow-hidden ">
-                  <Link href="" className="relative">
+                  <Link href="/blogs/2" className="relative">
                     <Image src={data.img} alt="" className="w-80 rounded-lg" />{" "}
                     <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 w-full"></div>
                   </Link>{" "}
@@ -185,7 +185,7 @@ export default function Category() {
                       </div>
                     </div>
                     <h3 className="pt-6 font-semibold text-lg md:text-md text-[#1c1707]  leading-tight">
-                      <Link href="">{data.title}</Link>
+                      <Link href="/blogs/2">{data.title}</Link>
                     </h3>{" "}
                   </div>
                 </div>

@@ -86,6 +86,7 @@ const ProductItem = () => {
                     className=" text-center w-full bg-gray-100 font-semibold text-sm hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
                     name="custom-input-number"
                     value={count}
+                    readOnly
                   />
                   <button
                     data-action="increment"
