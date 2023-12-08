@@ -67,10 +67,10 @@ export default function Cart() {
               </div>
 
               {/* BUTTON START */}
-              <button className="w-full py-2 md:py-3 rounded uppercase tracking-tighter bg-[#073d30] text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-80 flex items-center gap-2 justify-center">
+              <Link href={"/checkout"} className="w-full py-2 md:py-3 rounded uppercase tracking-tighter bg-[#073d30] text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-80 flex items-center gap-2 justify-center">
                 Checkout
                 {loading && <Image src={spinner} alt="" />}
-              </button>
+              </Link>
               {/* BUTTON END */}
             </div>
             {/* SUMMARY END */}

@@ -14,6 +14,7 @@ import Ingredient from "@/components/Ingredient";
 import Info from "@/components/Info";
 import Popular from "@/components/Popular";
 import ProductSlider from "@/components/ProductSlider";
+import Review from "@/components/Review";
 
 export default function Detail() {
   const [count, setCount] = useState(0);
@@ -99,7 +100,7 @@ export default function Detail() {
                 </span>
               </div>
               <div>
-                <span className="text-lg">$8.50</span>
+                <span className="text-2xl font-bold">$8.50</span>
               </div>
               <div>
                 <span className="text-[17px]">
@@ -170,6 +171,15 @@ export default function Detail() {
                 </span>
               </button>
             </div>
+            <div className="flex w-44  items-center space-x-2 mb-3 cursor-pointer hover:text-pink-500">
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+</svg>
+
+              </div>
+              <span className="capitalize font-semibold text-[16px]">Add to favorite</span>
+            </div>
             <div className="flex flex-col space-y-1">
               <div className="flex space-x-1 items-center">
                 <div>
@@ -229,6 +239,7 @@ export default function Detail() {
 
       <Ingredient />
       <Info />
+      <Review />
       <Popular />
       <Footer />
     </>

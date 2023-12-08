@@ -40,37 +40,37 @@ export default function Shop() {
           <span className="text-lg md:text-2xl font-bold text-[#002f6c]">Shop By Pets</span>
         </div>
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+        <Link href={"/collection"} className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
           <Image src={cat} className='w-28 ' alt='' />
           <div>
             <span className='font-semibold'>Cat</span>
           </div>
         </Link>
-        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+        <Link href={"/collection"} className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
           <Image src={dog} className='w-28' alt='' />
           <div>
             <span className='font-semibold'>Dog</span>
           </div>
         </Link>
-        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+        <Link href={"/collection"} className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
           <Image src={bird} className='w-28' alt='' />
           <div>
             <span className='font-semibold'>Bird</span>
           </div>
         </Link>
-        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+        <Link href={"/collection"} className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
           <Image src={fish} className='w-28' alt='' />
           <div>
             <span className='font-semibold'>Fish</span>
           </div>
         </Link>
-        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+        <Link href={"/collection"} className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
           <Image src={reptile} className='w-28' alt='' />
           <div>
             <span className='font-semibold'>Reptile</span>
           </div>
         </Link>
-        <Link href="" className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
+        <Link href={"/collection"} className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
           <Image src={smallpet} className='w-28' alt='' />
           <div>
             <span className='font-semibold'>Small Pet</span>
