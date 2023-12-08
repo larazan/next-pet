@@ -243,3 +243,11 @@ input[type='number']::-webkit-outer-spin-button {
   height: 3.7142857142857144em;
   width: auto;
 }
+
+.nav-item {
+  border-bottom: 3px solid #FFE5DD;
+}
+
+.nav-item .active{
+  border-bottom: 3px solid #ec4899;
+}

@@ -477,7 +477,7 @@ export default function Detail() {
                 </article>
 
                 <article>
-                  <section id="origin">
+                  <section name="origin">
                     <div className="flex items-center space-x-2">
                       <Image src={origins} alt="" />
                       <span className="text-2xl font-semibold">
@@ -511,7 +511,7 @@ export default function Detail() {
                       truly the gift that keeps on giving!
                     </p>
                   </section>
-                  <section id="physical">
+                  <section name="physical">
                     <div className="flex items-center space-x-2">
                       <Image src={physic} alt="" />
                       <span className="text-2xl font-semibold">
@@ -605,7 +605,7 @@ export default function Detail() {
                     </p>
                   </section>
 
-                  <section id="temperament">
+                  <section name="temperament">
                     <div className="mb-10">
                       <div className="flex items-center space-x-2">
                         <Image src={personality} alt="" />
@@ -669,7 +669,7 @@ export default function Detail() {
                     </div>
                   </section>
 
-                  <section id="price" className="px-5 py-4 rounded-lg bg-[#7ce993]">
+                  <section name="price" className="px-5 py-4 rounded-lg bg-[#7ce993]">
                     <div className="flex items-center space-x-2">
                       <Image src={price} alt="" />
                       <span className="text-2xl font-semibold">Price</span>
@@ -683,7 +683,7 @@ export default function Detail() {
                     </p>
                   </section>
 
-                  <section id="health">
+                  <section name="health">
                     <div className="flex items-center space-x-2">
                       <Image src={care} alt="" />
                       <span className="text-2xl font-semibold">
