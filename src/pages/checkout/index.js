@@ -239,7 +239,22 @@ export default function Checkout() {
           <p className="mt-8 text-lg font-medium capitalize text-gray-800">
             Shipping Methods
           </p>
-          <form className="mt-2 grid gap-3">
+          <div className="flex w-full flex-col rounded bg-[#f4f4f4] mt-3">
+            <div className="flex justify-between py-3 px-4 rounded bg-blue-100 border border-[#006eff]">
+              <div>
+                <span className="text-[14px]">Standard</span>
+              </div>
+              <div className="flex flex-col space-y-1">
+                <div>
+                  <span className="text-xs">$ 5.00</span>
+                </div>
+                <div>
+                  <span className="text-sm font-semibold">Free</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <form className="mt-2 grid gap-3">
             <div className="relative bg-pink-50">
               <input
                 className="peer hidden"
@@ -296,7 +311,7 @@ export default function Checkout() {
                 </div>
               </label>
             </div>
-          </form>
+          </form> */}
 
           <p className="mt-8 text-lg font-medium capitalize text-gray-800">
             Payment
@@ -620,14 +635,14 @@ export default function Checkout() {
               </button>
             </div>
 
-            <div className="mt-3  py-2">
+            <div className="mt-3 py-2">
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-gray-900">Subtotal</p>
                 <p className="font-semibold text-gray-900">$399.00</p>
               </div>
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-gray-900">Shipping</p>
-                <p className="font-semibold text-gray-900">$8.00</p>
+                <p className=" text-gray-900">$8.00 <span className="font-semibold">Free</span></p>
               </div>
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-gray-900">Taxes</p>
