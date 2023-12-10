@@ -149,9 +149,9 @@ export default function Detail() {
                   <p>
                     To help your cat live their best feline life, Los Angeles
                     veterinarian Jeff Werber (who has eight cats himself) offers
-                    helpful advice to pet parents. "It&apos;s crucial to get off on
-                    the right foot with cat care, " he says. "Good daily habits
-                    are where it starts." These tips can help you provide the
+                    helpful advice to pet parents. &quot;It&apos;s crucial to get off on
+                    the right foot with cat care, &quot; he says. &quot;Good daily habits
+                    are where it starts.&quot; These tips can help you provide the
                     love and care your cat deserves.
                   </p>
                   <h2>Brush Your Cat Every Day</h2>
@@ -163,9 +163,9 @@ export default function Detail() {
                     parents may not know that they can actually help their cats
                     by removing loose hair through regular brushing. Werber says
                     that the key to getting a cat to cooperate with brushing is
-                    to teach your cat to associate it with happy events. "Maybe
-                    you always brush before a meal," he says. "Then your cat
-                    will associate it with something delicious."
+                    to teach your cat to associate it with happy events. &quot;Maybe
+                    you always brush before a meal,&quot; he says. &quot;Then your cat
+                    will associate it with something delicious.&quot;
                   </p>
                   <h2>2. Don’t Feed Your Cat Too Much Dry Food</h2>
                   <p>
@@ -174,8 +174,8 @@ export default function Detail() {
                     the day should always be meat, says Werber. He cautions that
                     exclusively feeding dry food diets to cats may cause them to
                     consume too many carbohydrates, which can be unhealthy in
-                    large amounts. "We see cats developing type 2 diabetes and
-                    growing obese from too much dry food," Werber explains.
+                    large amounts. &quot;We see cats developing type 2 diabetes and
+                    growing obese from too much dry food,&quot; Werber explains.
                   </p>
                   <p>
                     If you have both dogs and cats, you can&apos;t feed them the
@@ -211,9 +211,9 @@ export default function Detail() {
                     Humans tend to want the boxes tucked away in a hidden spot
                     like a basement or dark corner, but some cats are
                     uncomfortable in these areas. Werber says to think about a
-                    cat&apos;s natural instincts. "The animal is in a vulnerable
-                    position when performing those functions," he says. "They
-                    want to be able to see around them." For the same reason,
+                    cat&apos;s natural instincts. &quot;The animal is in a vulnerable
+                    position when performing those functions,&quot; he says. &quot;They
+                    want to be able to see around them.&quot; For the same reason,
                     your pet may not be willing to use a box with a cover or one
                     that&apos;s been cleverly hidden in furniture.
                   </p>
@@ -223,9 +223,9 @@ export default function Detail() {
                   <p>
                     Little frustrates a cat parent more than when kitty skips
                     the box and pees somewhere else in the house—especially when
-                    it&apos;s your couch or bed. Why would a cat do this? "There can
-                    be a lot of reasons," says Werber, "and you want to rule out
-                    illness first." Bring your cat to the vet to check for a
+                    it&apos;s your couch or bed. Why would a cat do this? &quot;There can
+                    be a lot of reasons,&quot; says Werber, &quot;and you want to rule out
+                    illness first.&quot; Bring your cat to the vet to check for a
                     urinary tract infection or other illness that could explain
                     this new behavior. Once health concerns are ruled out, make
                     sure that litter boxes meet your cat&apos;s preferences.
@@ -242,7 +242,7 @@ export default function Detail() {
                     use a scratching post so they won&apos;t end up clawing your
                     furniture. The mistake many owners make, says Werber, is not
                     knowing that they have to give the scratching post some
-                    appeal. "Put it in the center of the room to start," he
+                    appeal. &quot;Put it in the center of the room to start,&quot; he
                     explains. If you place it in a corner far from the social
                     action in the household, it&apos;s easy for your cat to ignore
                     it. Sprinkle the scratcher with catnip when you first bring
@@ -254,7 +254,7 @@ export default function Detail() {
                   <p>
                     There&apos;s nothing more beneficial to your cat&apos;s long-term
                     wellness than getting them spayed or neutered, Werber says.
-                    "Female cats are very uncomfortable when they go into heat,"
+                    &quot;Female cats are very uncomfortable when they go into heat,&quot;
                     he adds. Spaying and neutering can help keep your cat safe,
                     too. Because unaltered male cats often fight, they risk
                     transmitting diseases through bites and scratches. The
@@ -274,8 +274,8 @@ export default function Detail() {
                     and teach your cat to use it without fear.
                   </p>
                   <p>
-                    Werber also warns to "never, ever leave your cat alone in a
-                    parked car." Even in cooler temperatures, and even with the
+                    Werber also warns to &quot;never, ever leave your cat alone in a
+                    parked car.&quot; Even in cooler temperatures, and even with the
                     windows cracked, a car quickly becomes uncomfortable for an
                     animal (or human, for that matter). It takes mere minutes
                     for a cat to perish in a warm car. Leave your cat at home if
@@ -285,8 +285,8 @@ export default function Detail() {
                   <p>
                     Many veterinary practices see multiple species, including
                     canines. This can be scary for a cat who has to sit in a
-                    waiting room surrounded by dogs. "Look for a vet who has
-                    separate waiting areas for cats and dogs," says Werber.
+                    waiting room surrounded by dogs. &quot;Look for a vet who has
+                    separate waiting areas for cats and dogs,&quot; says Werber.
                     While that&apos;s ideal, not all practices have the space for
                     this. If your favorite vet doesn&apos;t have two waiting rooms,
                     ask to be called into the exam room quickly, Werber advises.
