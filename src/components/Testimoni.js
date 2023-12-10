@@ -61,7 +61,7 @@ const Testimoni = () => {
           <h1 className="font-bold text-3xl text-[#1d4943]">
           The Wall of Love ❤️
           </h1>
-          <span className="text-gray-900">Let's turn the spotlight on where it should be — Ivy Stat members and their experience interning with companies</span>
+          <span className="text-gray-900">Let&apos;s turn the spotlight on where it should be — Ivy Stat members and their experience interning with companies</span>
         </div>
         <div className="columns-1 md:columns-3 lg:columns-3 gap-6 mt-8 mb-8 mx-auto py-6 w-full px-3 md:px-0 md:w-10/12 ">
           {shout.map((data, index) => {

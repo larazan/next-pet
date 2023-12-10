@@ -429,7 +429,7 @@ export default function Checkout() {
             </div>
           </div>
           {show ? (
-            <div className="flex flex-col py-4 px-3 bg-[#f4f4f4] border">
+            <div className="flex flex-col py-4 px-3 bg-[#f4f4f4] border transition-all ease-in-out duration-900 ">
             <div className="flex space-x-1">
               <input
                 type="text"

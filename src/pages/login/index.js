@@ -48,7 +48,7 @@ export default function Login() {
             <div className="flex flex-col space-y-2">
               <h3 className="font-semibold text-2xl text-[#095140]">Sign in</h3>
               <span>
-                Sign in to see your org's good-deed data
+                Sign in to see your org&apos;s good-deed data
                 <br />
                 New to OnHand?{" "}
                 <Link

@@ -491,7 +491,7 @@ export default function Detail() {
                       reserve in Arizona in the late sixties. A young American
                       couple on holiday, the Sanders, fell under his spell. They
                       named him Yodi and brought him home with them in Iowa.
-                      Yodi wooed the family's cat, a colour-pointed kitten
+                      Yodi wooed the family&apos;s cat, a colour-pointed kitten
                       without a pedigree, who then gave birth to a litter of
                       short-tailed kittens. A friend of the Sanders was
                       intrigued by these peculiar kittens and decided to turn

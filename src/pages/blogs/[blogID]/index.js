@@ -144,12 +144,12 @@ export default function Detail() {
                   <p>
                     Keeping your feline friend healthy and happy starts with a
                     few simple steps—some of which can be integrated into your
-                    cat's environment right away.
+                    cat&apos;s environment right away.
                   </p>
                   <p>
                     To help your cat live their best feline life, Los Angeles
                     veterinarian Jeff Werber (who has eight cats himself) offers
-                    helpful advice to pet parents. "It's crucial to get off on
+                    helpful advice to pet parents. "It&apos;s crucial to get off on
                     the right foot with cat care, " he says. "Good daily habits
                     are where it starts." These tips can help you provide the
                     love and care your cat deserves.
@@ -178,22 +178,22 @@ export default function Detail() {
                     growing obese from too much dry food," Werber explains.
                   </p>
                   <p>
-                    If you have both dogs and cats, you can't feed them the
+                    If you have both dogs and cats, you can&apos;t feed them the
                     same. Dog food is not good for cats, nor can a cat
                     metabolize carbs the way a dog can. Consider feeding wet
-                    food as a part, if not all, of your cat's diet.
+                    food as a part, if not all, of your cat&apos;s diet.
                   </p>
-                  <h2>3. Pay Attention to Your Cat's Thirst</h2>
+                  <h2>3. Pay Attention to Your Cat&apos;s Thirst</h2>
                   <p>
                     Domestic cats evolved from desert-dwelling felines, so cats
-                    don't naturally drink as much water as dogs. Ideally, cats
+                    don&apos;t naturally drink as much water as dogs. Ideally, cats
                     should get most of their water from food. A meal that a cat
                     might eat in the wild—such as a mouse—is about 70% water.
                     Canned food contains about 78% water, but dry food only has
                     5% to 10% water on average.
                   </p>
                   <p>
-                    It's important to give your cat access to fresh water at all
+                    It&apos;s important to give your cat access to fresh water at all
                     times no matter their diet, but you may notice your cat
                     drinking more when they primarily eat dry food. Seniors,
                     nursing cats, and cats with chronic health conditions are
@@ -207,15 +207,15 @@ export default function Detail() {
                     As far as potty places go, Werber says a good rule of thumb
                     is to have one litter box per kitty, plus an additional one.
                     So if you have three cats, you should set up four boxes, and
-                    you'll want to think carefully about where those boxes go.
+                    you&apos;ll want to think carefully about where those boxes go.
                     Humans tend to want the boxes tucked away in a hidden spot
                     like a basement or dark corner, but some cats are
                     uncomfortable in these areas. Werber says to think about a
-                    cat's natural instincts. "The animal is in a vulnerable
+                    cat&apos;s natural instincts. "The animal is in a vulnerable
                     position when performing those functions," he says. "They
                     want to be able to see around them." For the same reason,
                     your pet may not be willing to use a box with a cover or one
-                    that's been cleverly hidden in furniture.
+                    that&apos;s been cleverly hidden in furniture.
                   </p>
                   <h2>
                     5. Don’t Assume You Know Why a Cat Is Peeing Outside the Box
@@ -223,12 +223,12 @@ export default function Detail() {
                   <p>
                     Little frustrates a cat parent more than when kitty skips
                     the box and pees somewhere else in the house—especially when
-                    it's your couch or bed. Why would a cat do this? "There can
+                    it&apos;s your couch or bed. Why would a cat do this? "There can
                     be a lot of reasons," says Werber, "and you want to rule out
                     illness first." Bring your cat to the vet to check for a
                     urinary tract infection or other illness that could explain
                     this new behavior. Once health concerns are ruled out, make
-                    sure that litter boxes meet your cat's preferences.
+                    sure that litter boxes meet your cat&apos;s preferences.
                     Experiment with different types of litter to find out if
                     there is one type your pet prefers. Be scrupulous about
                     keeping the box clean: scoop once or twice a day (more for
@@ -238,13 +238,13 @@ export default function Detail() {
                   </p>
                   <h2>6. Train Your Cat to Use a Scratching Post</h2>
                   <p>
-                    Don't want your new sofa ripped to shreds? Teach your cat to
-                    use a scratching post so they won't end up clawing your
+                    Don&apos;t want your new sofa ripped to shreds? Teach your cat to
+                    use a scratching post so they won&apos;t end up clawing your
                     furniture. The mistake many owners make, says Werber, is not
                     knowing that they have to give the scratching post some
                     appeal. "Put it in the center of the room to start," he
                     explains. If you place it in a corner far from the social
-                    action in the household, it's easy for your cat to ignore
+                    action in the household, it&apos;s easy for your cat to ignore
                     it. Sprinkle the scratcher with catnip when you first bring
                     it home, the vet advises. Once you have gotten your pet into
                     the habit of using it, you can gradually move it to a
@@ -252,7 +252,7 @@ export default function Detail() {
                   </p>
                   <h2>7. Spay or Neuter Your Cat</h2>
                   <p>
-                    There's nothing more beneficial to your cat's long-term
+                    There&apos;s nothing more beneficial to your cat&apos;s long-term
                     wellness than getting them spayed or neutered, Werber says.
                     "Female cats are very uncomfortable when they go into heat,"
                     he adds. Spaying and neutering can help keep your cat safe,
@@ -262,13 +262,13 @@ export default function Detail() {
                     cats can become pregnant as early as four months old, and
                     mating and queening multiple litters of kittens can be very
                     stressful. And because there are so many unwanted cats in
-                    shelters waiting for their forever homes, it's better to not
+                    shelters waiting for their forever homes, it&apos;s better to not
                     add to the population.
                   </p>
                   <h2>8. Travel Safely With Your Pet</h2>
                   <p>
-                    Even if your cat wants to, don't let them travel
-                    unrestrained in a car. It's distracting to the driver and,
+                    Even if your cat wants to, don&apos;t let them travel
+                    unrestrained in a car. It&apos;s distracting to the driver and,
                     in the case of an accident, a cat can become a dangerous
                     projectile. Get a comfortable travel carrier for car rides,
                     and teach your cat to use it without fear.
@@ -287,11 +287,11 @@ export default function Detail() {
                     canines. This can be scary for a cat who has to sit in a
                     waiting room surrounded by dogs. "Look for a vet who has
                     separate waiting areas for cats and dogs," says Werber.
-                    While that's ideal, not all practices have the space for
-                    this. If your favorite vet doesn't have two waiting rooms,
+                    While that&apos;s ideal, not all practices have the space for
+                    this. If your favorite vet doesn&apos;t have two waiting rooms,
                     ask to be called into the exam room quickly, Werber advises.
                     You can also look for cat-only veterinarians in your area
-                    (yes, they exist!) so your kitty won't get bombarded with
+                    (yes, they exist!) so your kitty won&apos;t get bombarded with
                     the sights, sounds, and smells of dogs, birds, and other
                     critters.
                   </p>
@@ -299,7 +299,7 @@ export default function Detail() {
                   <p>
                     When a cat loves you, they like to prove it, sometimes by
                     offering you the results of a successful hunt. Werber
-                    suggests accepting the gifts with grace (even when it's
+                    suggests accepting the gifts with grace (even when it&apos;s
                     gross—say, a decapitated mouse). Your cat may also show you
                     love by head bunting, purring, or kneading you with their
                     paws. Sit back and soak up the affection.

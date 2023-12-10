@@ -48,7 +48,7 @@ export default function Forgot() {
             <div className="flex flex-col space-y-2">
               <h3 className="font-semibold text-2xl text-[#095140]">Forgotten password</h3>
               <span>
-              Let us know the email address you signed up with and we'll send you a link to reset your password
+              Let us know the email address you signed up with and we&apos;ll send you a link to reset your password
               </span>
             </div>
             <div className="">

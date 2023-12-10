@@ -34,7 +34,7 @@ const Info = () => {
             <div className="flex flex-col space-y-4 px-10 py-8">
               {setData.map((data, index) => {
                 return (
-                  <div className="flex flex-col space-y-1">
+                  <div className="flex flex-col space-y-1" key={index}>
                     <div className="text-2xl font-semibold">{data.title}</div>
                     <span className="text-[17px]">{data.body}</span>
                   </div>
