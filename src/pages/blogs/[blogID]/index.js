@@ -338,7 +338,7 @@ export default function Detail() {
         </div>
         <div className="flex flex-row w-full">
         <div className="flex flex-1 flex-col items-center justify-center relative">
-        <div className="flex pb-18 max-w-sm md:max-w-2xl ">
+        <div className="flex flex-1 pb-18 max-w-sm md:max-w-2xl ">
         <RelatedArticle />
         </div>
         </div>
