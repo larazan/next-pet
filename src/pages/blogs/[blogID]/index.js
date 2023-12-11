@@ -314,13 +314,13 @@ export default function Detail() {
               <Help />
 
               {/* SOURCE */}
-              <div className="px-4 md:px-4 pt-4">
+              <div className="px-6 md:px-4 pt-4">
                 <span className=" text-sm italic">
                   A version of this article was originally written by Clare
                   McHugh and first appeared on Health.com.
                 </span>
               </div>
-              <div className="md:text-sm text-gray-500 px-4 md:px-4 pb-3 font-mabry">
+              <div className="md:text-sm text-gray-500 px-6 md:px-4 pb-3 font-mabry">
                 Source:{" "}
                 <a
                   href="https://mydramalist.com/article/an-ultra-fan-guide-to-lee-elijah"
@@ -337,8 +337,8 @@ export default function Detail() {
           </div>
         </div>
         <div className="flex flex-row w-full">
-        <div className="flex flex-1 flex-col items-center justify-center relative">
-        <div className="flex flex-1 pb-18 px-5 max-w-sm md:max-w-2xl ">
+        <div className="flex flex-1 w-full items-center justify-center relative">
+        <div className="flex flex-1 pb-18  max-w-sm md:max-w-2xl ">
         <RelatedArticle />
         </div>
         </div>
