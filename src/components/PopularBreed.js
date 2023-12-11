@@ -161,7 +161,7 @@ const PopularBreed = () => {
                           <Image
                             src={data.image}
                             alt=""
-                            className="w-full object-cover"
+                            className="w-[300px] object-cover"
                           />{" "}
                           <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
                         </Link>{" "}
