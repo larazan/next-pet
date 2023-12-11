@@ -39,7 +39,7 @@ export default function Shop() {
         <div>
           <span className="text-lg md:text-2xl font-bold text-[#002f6c]">Shop By Pets</span>
         </div>
-        <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mx-auto w-full md:w-12/12 items-center">
         <Link href={"/collection"} className="flex flex-col transform duration-200 hover:scale-105 justify-center items-center space-y-1 py-2 border-b-2 border-white hover:border-gray-900">
           <Image src={cat} className='w-28 ' alt='' />
           <div>
