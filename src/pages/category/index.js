@@ -76,12 +76,12 @@ export default function Category() {
       <GoTop />
 
       <div className="bg-[#90e59b] flex relative z-10 items-center overflow-hidden">
-        <div className="container2 mx-auto px-6 flex items-center relative py-12">
-          <div className="md:w-1/2 lg:w-2/5 px-6 flex flex-col relative z-20 text">
-            <h1 className="font-bebas-neue uppercase text-3xl sm:text-5xl font-bold flex flex-col leading-none  text-gray-900">
+        <div className="container2 mx-auto px-4 md:px-6 flex items-center relative py-8 md:py-12">
+          <div className="md:w-1/2 lg:w-2/5 md:px-6 flex flex-col relative z-20 text">
+            <h1 className="font-bebas-neue uppercase text-2xl md:text-3xl sm:text-5xl font-bold flex flex-col leading-none  text-gray-900">
               Cats & Kittens
             </h1>
-            <h3 className="text-2xl font-semibold flex flex-col py-4 leading-tight tracking-tight  text-[#1d4943]">
+            <h3 className="text-lg md:text-2xl font-semibold flex flex-col py-4 leading-tight tracking-tight  text-[#1d4943]">
               Cats and kittens make the sweetest pets! Learn everything you need
               to know about cat adoption, caring for a cat, and cute cat name
               ideas. Plus, take a look through the various cat breeds out there
@@ -103,61 +103,61 @@ export default function Category() {
           <div className="flex flex-wrap space-x-3 w-full">
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-gray-900  py-4 px-6 rounded-full bg-[#ff74be] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-gray-900 px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#ff74be] capitalize "
             >
               Cat Behavior
             </a>{" "}
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#f3b05f]  py-4 px-6 rounded-full bg-[#736ef7] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-[#f3b05f]  px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#736ef7] capitalize "
             >
               cat breeds
             </a>{" "}
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#584eda]  py-4 px-6 rounded-full bg-[#7ce0cc] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-[#584eda]  px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#7ce0cc] capitalize "
             >
               adopting a cat
             </a>{" "}
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-gray-900  py-4 px-6 rounded-full bg-[#e05257] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-gray-900  px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#e05257] capitalize "
             >
               cat excercise & play
             </a>{" "}
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#e05257]  py-4 px-6 rounded-full bg-[#ffb651] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-[#e05257]  px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#ffb651] capitalize "
             >
               cat grooming
             </a>{" "}
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#14322e]  py-4 px-6 rounded-full bg-[#a2d219] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-[#14322e]  px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#a2d219] capitalize "
             >
               cat nutrition & diet
             </a>{" "}
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-gray-900  py-4 px-6 rounded-full bg-[#ff74be] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-gray-900  px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#ff74be] capitalize "
             >
               cat photo
             </a>{" "}
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#f3b05f]  py-4 px-6 rounded-full bg-[#736ef7] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-[#f3b05f]  px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#736ef7] capitalize "
             >
               cat safety tips & advice
             </a>{" "}
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-[#584eda]  py-4 px-6 rounded-full bg-[#7ce0cc] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-[#584eda]  px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#7ce0cc] capitalize "
             >
               basic cat training
             </a>{" "}
             <a
               href="#"
-              className="m-1 flex flex-wrap items-center text-lg font-bold text-gray-900  py-4 px-6 rounded-full bg-[#e05257] capitalize "
+              className="m-1 flex flex-wrap items-center text-md font-semibold md:text-lg md:font-bold text-gray-900  px-3 py-1.5 md:py-4 md:px-6 rounded-full bg-[#e05257] capitalize "
             >
               cat health care
             </a>{" "}

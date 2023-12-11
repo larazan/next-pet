@@ -102,7 +102,7 @@ const Review = () => {
           <div className="flex flex-col divide-y  py-5 border-y">
             {show ? (
                 <div className="flex w-full space-x-2">
-              <div className="w-1/2 flex flex-col space-y-2 pb-5">
+              <div className="w-full md:w-1/2 flex flex-col space-y-2 pb-5">
                 <div>
                   <span className="text-md text-gray-600 font-semibold">
                     Title
@@ -177,7 +177,7 @@ const Review = () => {
                   </button>
                 </div>
               </div>
-              <div className="w-1/2 ">
+              <div className="w-1/6 md:w-1/2 ">
               <button className="flex justify-end px-2 py-2 bg-black text-white rounded-full" onClick={() => setShow(false)}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

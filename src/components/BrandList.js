@@ -68,7 +68,7 @@ import brand7 from "@/assets/brands/brand7.png"
 
   return (
     <>
-        <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-white">
+        <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-4 md:py-4 justify-center2 items-center2 bg-white">
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
           <Link
             href={"/"}

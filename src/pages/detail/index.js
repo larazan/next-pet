@@ -21,11 +21,11 @@ export default function Detail() {
 
   const handleSubtractOne = () => {
     setCount(count - 1);
- }
+  };
 
- const handleAddOne = () => {
-  setCount(count + 1);
-}
+  const handleAddOne = () => {
+    setCount(count + 1);
+  };
 
   return (
     <>
@@ -39,14 +39,14 @@ export default function Detail() {
       <GoTop />
 
       <div className="flex relative z-10 items-center overflow-hidden bg-white">
-        <div className="flex w-full items-center2 justify-center2 bg-[#f1f1f3]">
-          <div className="w-1/2 h-full bg-[#f1f1f3]">
+        <div className="flex w-full flex-col md:flex-row items-center2 justify-center2 bg-[#f1f1f3]">
+          <div className="w-full md:w-1/2 h-full bg-[#f1f1f3]">
             <div className="flex h-full justify-center items-center">
               {/* <Image src={detail1} alt="" className="object-cover" /> */}
               <ProductSlider />
             </div>
           </div>
-          <div className="w-1/2 flex flex-col px-10 py-4 bg-[#f1f1f3]">
+          <div className="w-full md:w-1/2 flex flex-col px-10 py-4 bg-[#f1f1f3]">
             <div>
               <nav className="text-sm my-1" aria-label="Breadcrumb">
                 <ol className="list-none p-0 inline-flex">
@@ -173,12 +173,24 @@ export default function Detail() {
             </div>
             <div className="flex w-44  items-center space-x-2 mb-3 cursor-pointer hover:text-pink-500">
               <div>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-</svg>
-
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-7 h-7"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                  />
+                </svg>
               </div>
-              <span className="capitalize font-semibold text-[16px]">Add to favorite</span>
+              <span className="capitalize font-semibold text-[16px]">
+                Add to favorite
+              </span>
             </div>
             <div className="flex flex-col space-y-1">
               <div className="flex space-x-1 items-center">

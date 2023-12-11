@@ -221,9 +221,9 @@ const SlideProduct = () => {
                   className="transition-all duration-150 flex mr-[1em] w-full h-28"
                   key={index}
                 >
-                  <div className="flex mx-auto w-[130px] md:w-[725px]  bg-white p-2 border2 ">
+                  <div className="flex mx-auto w-[310px] md:w-[725px]  bg-white p-2 border2 ">
                     <div className=' mx-auto min-w-[200px] flex justify-center items-center'>
-                    <div className="flex w-1/6">
+                    <div className="flex w-2/6 md:w-1/6">
                       <Link
                         href="/shop/product-2"
                         className="flex p-2"
@@ -233,10 +233,10 @@ const SlideProduct = () => {
                         </div>
                       </Link>{" "}
                     </div>
-                    <div className="flex flex-col w-5/6  ">
+                    <div className="flex flex-col w-4/6 md:w-5/6  ">
                       <div className="flex text-center2 leading-tight">
                         <Link href={"/shop/product-2"}>
-                          <span className="font-bold text-[10px] md:text-[13px]  text-gray-900  hover:underline">
+                          <span className="font-bold text-[10px] md:text-[13px] leading-tight text-gray-900  hover:underline">
                             {data.title}
                           </span>
                         </Link>

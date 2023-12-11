@@ -9,7 +9,7 @@ const Tabs = ({ children }) => {
   };
 
   return (
-    <div className="px-8 mx-auto w-full">
+    <div className="px-4 md:px-8 mx-auto w-full">
       <div className="flex border-b border-gray-800">
         {children.map((child) => (
           <button
@@ -18,7 +18,7 @@ const Tabs = ({ children }) => {
               activeTab === child.props.label
                 ? "border-b-2 border-gray-900 font-bold"
                 : ""
-            } flex-1 text-gray-700 text-[17px] py-2`}
+            } flex-1 text-gray-700 text-sm md:text-[17px] py-2`}
             onClick={(e) => handleClick(e, child.props.label)}
           >
             {child.props.label}

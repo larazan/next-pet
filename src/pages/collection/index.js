@@ -31,8 +31,8 @@ export default function Collection() {
       <GoTop />
       <SlideProduct />
       <div className="flex relative z-10 items-center overflow-hidden bg-white">
-        <div className="flex justify-between items-center mx-auto pt-3 w-full px-3 md:px-0 md:w-11/12">
-          <div className="rounded-full border-black w-[280px] border-2 border-solid hover:shadow-md transform duration-200 hover:scale-105">
+        <div className="flex justify-between items-center mx-auto pt-3 w-full px-4 md:px-0 md:w-11/12">
+          <div className="rounded-full border-black w-[150px] md:w-[280px] border-2 border-solid hover:shadow-md transform duration-200 hover:scale-105">
             <button
               className="filter2 place-content-center flex w-full justify-between px-3 items-center py-1 text-black focus:outline-none "
               type="button"
@@ -59,7 +59,7 @@ export default function Collection() {
               </div>
             </button>
           </div>
-          <div className="w-[280px] py-3 flex flex-wrap md:flex-nowrap items-center">
+          <div className="w-[150px] md:w-[280px] py-3 flex flex-wrap md:flex-nowrap items-center">
             <select className="input-select text-sm z-1 border border-gray-800 text-black block truncate text-14 font-semibold">
               <option value="RANK_ASC">Popularity</option>
               <option value="PRICE_ASC">Lowest price</option>

@@ -194,7 +194,7 @@ export default function Detail() {
       <Header />
       <GoTop />
 
-      <div className="flex flex-col bg-[#f8f3e7] min-h-screen relative">
+      <div className="flex flex-col bg-[#f8f3e7] min-h-screen relative2">
         <div className="bg-[#FFE5DD] py-5 mb-0">
           <h1 className="relative mx-3 md:mx-auto text-3xl md:text-5xl md:leading-[60px] max-w-3xl m-auto font-semibold text-center mt-4 sm:mt-6 mb-5 sm:mb-0">
             Scottish Fold
@@ -370,10 +370,10 @@ export default function Detail() {
         <div className="flex flex-row w-full">
           <div className="flex flex-1 flex-col items-center justify-center relative">
             <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
-              <section className="w-full mx-auto  mt-2 md:mt-4 px-5 markdown-blog">
-                <div className="flex w-full items-center pb-4">
-                  {/* breadcrumb */}
-                  <nav className="w-1/2 flex text-sm my-1 " aria-label="Breadcrumb">
+              <section className="w-full mx-auto  mt-0 md:mt-4 px-5 markdown-blog">
+                <div className="flex flex-col md:flex-row w-full items-center pb-4">
+                  
+                  <nav className="w-full md:w-1/2  flex text-sm my-1 " aria-label="Breadcrumb">
                     <ol className="list-none p-0 inline-flex">
                       <li className="flex items-center">
                         <a
@@ -400,7 +400,7 @@ export default function Detail() {
                     </ol>
                   </nav>
 
-                  <div className="w-1/2 justify-end flex font-mabry">
+                  <div className="w-full md:w-1/2 md:justify-end flex font-mabry">
                     <div className=" flex justify-between items-center text-base md:text-sm text-green-500 font-bold">
                       <div className="flex justify-end space-x-2">
                         <button>
@@ -459,7 +459,7 @@ export default function Detail() {
                   <Image
                     src={scottish}
                     alt=""
-                    className="w-full border shadow"
+                    className="w-full border object-cover shadow"
                   />
                 </div>
                 <article>
@@ -733,10 +733,15 @@ export default function Detail() {
                   </section>
                 </article>
               </section>
-
-              <PopularBreed />
             </div>
           </div>
+        </div>
+        <div className="flex flex-row w-full">
+        <div className="flex flex-1 flex-col items-center justify-center relative">
+        <div className="flex pb-18 max-w-sm md:max-w-2xl ">
+        <PopularBreed />
+        </div>
+        </div>
         </div>
       </div>
 

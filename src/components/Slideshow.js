@@ -43,7 +43,7 @@ const Slideshow = () => {
           // style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className="w-full h-full rounded-2xl bg-center bg-cover object-cover duration-500"
         >
-          <Image src={slides[currentIndex].url} alt="" className="h-[350px]" />
+          <Image src={slides[currentIndex].url} alt="" className="md:h-[350px]" />
         </div>
         {/* Left Arrow */}
         <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full px-1.5 py-.5 bg-black/20 text-white cursor-pointer">

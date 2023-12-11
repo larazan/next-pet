@@ -29,8 +29,8 @@ const Info = () => {
   return (
     <>
       <div className="flex relative z-10 items-center overflow-hidden bg-[#f1f1f3]">
-        <div className="flex w-full">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-row w-full">
+          <div className="w-full md:w-1/2">
             <div className="flex flex-col space-y-4 px-10 py-8">
               {setData.map((data, index) => {
                 return (
@@ -42,7 +42,7 @@ const Info = () => {
               })}
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <Image src={inf} alt="" className="h-full object-cover" />
           </div>
         </div>
