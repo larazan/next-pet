@@ -13,9 +13,9 @@ const BreedNav = () => {
   return (
     <>
         <div className="shadow-lg bg-[#FFE5DD] mb-5 sticky top-0 z-20">
-          <div className='mx-auto w-full md:w-10/12'>
-          <ul className="flex overflow-x-auto overflow-hidden2 w-full items-center md:justify-center2 space-x-1 md:space-x-3  tracking-tight font-semibold text-sm text-[#b6cce2] shadow2">
-            <li className="nav-item md:-mt-px">
+          <div className='inline-flex flex-nowrap mx-auto w-full md:w-10/12'>
+          <ul className="flex overflow-x-auto w-full items-center md:justify-center2 md:space-x-3  tracking-tight font-semibold text-sm text-[#b6cce2] shadow2">
+            <li className="flex min-w-max nav-item md:-mt-px">
               <Link  className="flex items-center md:space-x-2 p-3 cursor-pointer" activeClass="active" to="origin" spy={true} smooth={true} offset={-80} duration={500} >
                 <Image src={origins} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">
@@ -23,7 +23,7 @@ const BreedNav = () => {
                 </span>
               </Link>
             </li>
-            <li className="nav-item md:-mt-px">
+            <li className="min-w-max nav-item md:-mt-px">
               <Link className="flex items-center md:space-x-2 p-3 cursor-pointer" activeClass="active" to="physical" spy={true} smooth={true} offset={-80} duration={500}>
                 <Image src={physic} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">
@@ -31,7 +31,7 @@ const BreedNav = () => {
                 </span>
               </Link>
             </li>
-            <li className="nav-item md:-mt-px">
+            <li className="min-w-max nav-item md:-mt-px">
               <Link className="flex items-center md:space-x-2 p-3 cursor-pointer" activeClass="active" to="temperament" spy={true} smooth={true} offset={-80} duration={500}>
                 <Image src={personality} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">
@@ -39,7 +39,7 @@ const BreedNav = () => {
                 </span>
               </Link>
             </li>
-            <li className="nav-item   md:-mt-px">
+            <li className="min-w-max nav-item   md:-mt-px">
               <Link className="flex items-center md:space-x-2 p-3 cursor-pointer" activeClass="active" to="price" spy={true} smooth={true} offset={-80} duration={500}>
               <Image src={price} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">
@@ -47,7 +47,7 @@ const BreedNav = () => {
                 </span>
               </Link>
             </li>
-            <li className="nav-item   md:-mt-px">
+            <li className="min-w-max nav-item   md:-mt-px">
               <Link className="flex items-center md:space-x-2 p-3 cursor-pointer" activeClass="active" to="health" spy={true} smooth={true} offset={-80} duration={500}>
               <Image src={care} alt='' className='hidden md:flex' />
                 <span className="text-xs md:text-base md:inline text-gray-800 font-semibold">

@@ -56,6 +56,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="w-1/6 flex space-x-1.5 items-center justify-end md:hidden">
+            <UserMenu />
               <div className="">
                 <button
                   className="flex relative"

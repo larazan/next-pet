@@ -7,11 +7,11 @@ import Image from "next/image";
 export default function HeaderRegistration() {
   return (
     <>
-      <header className="z-20 relative flex min-h-10  w-full top-0 md:m-0 px-4 md:px-6 py-6 md:py-3  items-center justify-between bg-[#095140] ">
+      <header className="z-20 relative flex min-h-10  w-full top-0 md:m-0 px-4 md:px-6 py-3 md:py-3  items-center justify-between bg-[#095140] ">
         <div>
           <Link
             href={"/"}
-            className="flex justify-center w-16 bg-[#fbd718] py-3 px-1 rounded"
+            className="flex justify-center w-10 md:w-16 bg-[#fbd718] py-3 px-1 rounded"
           >
             <svg
               width="90%"

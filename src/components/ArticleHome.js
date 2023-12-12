@@ -36,12 +36,12 @@ const ArticleHome = () => {
   ];
   return (
     <>
-      <div className="flex bg-[#f8f3e7] min-h-screen py-8 md:pt-[10px]">
+      <div className="flex bg-[#f8f3e7] md:min-h-screen py-8 md:pt-[10px]">
         <div className="flex flex-row w-full">
           
           <div className="flex flex-1 flex-col items-center justify-center relative">
             <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
-              <section className="w-full mx-auto  mt-10 md:mt-10 px-5 ">
+              <section className="w-full mx-auto  mt-0 md:mt-10 px-5 ">
               <h1 className="text-2xl font-bold text-[#095140]">Browse all our News</h1>
                 <div>
                   <div className="flex w-full space-x-4">

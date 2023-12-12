@@ -29,14 +29,14 @@ const Info = () => {
   return (
     <>
       <div className="flex relative z-10 items-center overflow-hidden bg-[#f1f1f3]">
-        <div className="flex flex-col md:flex-row w-full">
+        <div className="flex flex-col-reverse md:flex-row w-full">
           <div className="w-full md:w-1/2">
-            <div className="flex flex-col space-y-4 px-10 py-8">
+            <div className="flex flex-col space-y-4 px-4 md:px-10 py-8">
               {setData.map((data, index) => {
                 return (
                   <div className="flex flex-col space-y-1" key={index}>
                     <div className="text-2xl font-semibold">{data.title}</div>
-                    <span className="text-[17px]">{data.body}</span>
+                    <span className="text-[17px] leading-tight md:leading-normal">{data.body}</span>
                   </div>
                 );
               })}

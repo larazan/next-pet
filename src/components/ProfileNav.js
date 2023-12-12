@@ -8,8 +8,8 @@ const ProfileNav = () => {
 
   return (
     <>
-    <div className="py-3 md:py-5 px-3 md:px-8">
-          <span className="text-2xl tracking-tighter font-semibold uppercase">
+    <div className="py-2 md:py-5 px-3 md:px-8">
+          <span className="text-lg md:text-2xl tracking-tighter font-semibold uppercase">
             HI, alda
           </span>
         </div>

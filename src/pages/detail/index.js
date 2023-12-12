@@ -40,14 +40,69 @@ export default function Detail() {
 
       <div className="flex relative z-10 items-center overflow-hidden bg-white">
         <div className="flex w-full flex-col md:flex-row items-center2 justify-center2 bg-[#f1f1f3]">
+        <div className="w-full md:hidden flex flex-col px-4 py-2 bg-transparent">
+            <div>
+              <nav className="text-sm my-1" aria-label="Breadcrumb">
+                <ol className="list-none p-0 inline-flex">
+                  <li className="flex items-center">
+                    <a
+                      href="#"
+                      className="capitalize text-gray-900 hover:underline tracking-tight"
+                    >
+                      Product
+                    </a>
+                    <svg
+                      className="fill-current text-gray-900 w-2 h-2 mx-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                    </svg>
+                  </li>
+                  <li className="flex items-center">
+                    <a
+                      href="#"
+                      className="text-gray-900 capitalize hover:underline tracking-tight"
+                      aria-current="page"
+                    >
+                      Treats
+                    </a>
+                    <svg
+                      className="fill-current text-gray-900 w-2 h-2 mx-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                    </svg>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-900 font-semibold capitalize hover:underline tracking-tight"
+                      aria-current="page"
+                    >
+                      Salmon Savory Chews
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div className="flex py-2">
+              <div>
+                <span className="text-3xl font-semibold leading-tight">
+                  Salmon Savory Chews
+                </span>
+              </div>
+              </div>
+              </div>
           <div className="w-full md:w-1/2 h-full bg-[#f1f1f3]">
             <div className="flex h-full justify-center items-center">
               {/* <Image src={detail1} alt="" className="object-cover" /> */}
               <ProductSlider />
             </div>
           </div>
-          <div className="w-full md:w-1/2 flex flex-col px-10 py-4 bg-[#f1f1f3]">
-            <div>
+          <div className="w-full md:w-1/2 flex flex-col px-4 md:px-10 py-4 bg-[#f1f1f3]">
+            <div className="hidden md:block">
               <nav className="text-sm my-1" aria-label="Breadcrumb">
                 <ol className="list-none p-0 inline-flex">
                   <li className="flex items-center">
@@ -95,7 +150,7 @@ export default function Detail() {
             </div>
             <div className="flex flex-col py-4 space-y-3">
               <div>
-                <span className="text-3xl font-semibold">
+                <span className="text-3xl font-semibold leading-tight">
                   Salmon Savory Chews
                 </span>
               </div>
@@ -103,7 +158,7 @@ export default function Detail() {
                 <span className="text-2xl font-bold">$8.50</span>
               </div>
               <div>
-                <span className="text-[17px]">
+                <span className="text-[17px] leading-tight">
                   Spoil your cat with confidence, courtesy of our simple jerky
                   treats. Kitty will love the big meaty flavor and chewy
                   texture, and you’ll feel good knowing that they’re free from
@@ -111,7 +166,7 @@ export default function Detail() {
                 </span>
               </div>
             </div>
-            <div className="py-6 flex flex-col">
+            <div className="py-4 md:py-6 flex flex-col">
               <div className="flex h-14 border-x-2 border-t-2 border-gray-900">
                 <button
                   data-action="decrement"

@@ -208,7 +208,7 @@ const Popular = () => {
                   className="transition-all duration-150 flex mr-[1em] "
                   key={index}
                 >
-                  <div className="flex flex-col space-y-2 w-[130px] md:w-[230px]  justify-center bg-white2 border2 shadow2 ">
+                  <div className="flex flex-col space-y-2 w-[230px] md:w-[230px]  justify-center bg-white2 border2 shadow2 ">
                     <div className="relative w-full h-56 bg-gray-200  flex ">
                       <Link
                         href="/detail"

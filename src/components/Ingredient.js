@@ -10,11 +10,11 @@ const Ingredient = () => {
       <div className="flex justify-between w-full py-6 md:py-10">
         <Tabs>
           <Tab label="Ingredients">
-            <div className="flex w-full py-4">
-              <div className="w-1/3">
+            <div className="flex flex-col md:flex-row w-full py-4">
+              <div className="w-full flex justify-center md:justify-start md:w-1/3">
                 <Image src={salmon} alt="" className="w-60" />
               </div>
-              <div className="w-1/3 flex flex-col space-y-2">
+              <div className="w-full md:w-1/3 flex flex-col space-y-2">
                 <div className="text-center">
                   <h3 className="text-md md:text-lg font-semibold">Salmon</h3>
                   <p className="text-md md:text-lg">92%</p>
@@ -28,7 +28,7 @@ const Ingredient = () => {
                   <p className="text-md md:text-lg">5%</p>
                 </div>
               </div>
-              <div className="w-1/3">
+              <div className="w-full md:w-1/3">
                 <p className="text-md md:text-lg">
                 Salmon, vegetable glycerin (a natural preservative), chicken bone broth, rosemary extract (a natural preservative).
                 </p>

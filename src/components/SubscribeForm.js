@@ -7,25 +7,25 @@ const SubscribeForm = () => {
   return (
     <>
       <div className="relative flex bg-[#736ef7] py-8 ">
-        <div className="absolute text-white bottom-0 right-0">
+        <div className="hidden md:block absolute text-white bottom-0 right-0">
           <Image src={img} alt="" className="w-32" />
         </div>
         <div className="flex mx-auto w-11/12  ">
-          <div className="flex flex-col md:flex-row py-8 space-y-5 md:space-y-0 md:space-x-10 ">
+          <div className="flex flex-col md:flex-row md:py-8 space-y-5 md:space-y-0 md:space-x-10 ">
             <div className="w-full md:w-2/6 flex flex-col space-y-3 leading-tight">
-              <h3 className="text-3xl font-bold text-white">
+              <h3 className="text-2xl leading-tight md:text-3xl font-bold text-white">
                 New Pet? Everything you need to know
               </h3>
-              <span className="text-md font-semibold leading-snug text-white">
+              <span className="text-md font-semibold leading-tight md:leading-snug text-white">
                 Use our helpful new pet guides to learn more about what you need
                 to prepare your home for your new family member, nutrition
                 information, and training tips.
               </span>
             </div>
             <div className="w-full md:w-4/6">
-              <div className="w-full p-8 bg-[#fbd718] rounded-3xl shadow">
+              <div className="w-full px-4 py-6 md:p-8 bg-[#fbd718] rounded-3xl shadow">
                 <div className="flex flex-col space-y-5">
-                  <h3 className="text-lg font-semibold leading-tight">
+                  <h3 className="md:text-lg font-semibold leading-tight">
                     Subscribe to our newsletter and receive 10$ off your first
                     subscription order.
                   </h3>

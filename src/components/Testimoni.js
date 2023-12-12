@@ -58,12 +58,12 @@ const Testimoni = () => {
     <>
       <div className="relative z-10 items-center overflow-hidden bg-[#ff8dbd]">
         <div className="flex flex-col space-y-3 justify-center text-center items-center pt-8 mx-auto w-3/5 ">
-          <h1 className="font-bold text-3xl text-[#1d4943]">
+          <h1 className="font-bold text-2xl md:text-3xl text-[#1d4943]">
           The Wall of Love ❤️
           </h1>
-          <span className="text-gray-900">Let&apos;s turn the spotlight on where it should be — Ivy Stat members and their experience interning with companies</span>
+          <span className="text-gray-900 leading-tight md:leading-normal">Let&apos;s turn the spotlight on where it should be — Ivy Stat members and their experience interning with companies</span>
         </div>
-        <div className="columns-1 md:columns-3 lg:columns-3 gap-6 mt-8 mb-8 mx-auto py-6 w-full px-3 md:px-0 md:w-10/12 ">
+        <div className="columns-2 md:columns-3 lg:columns-3 gap-3 md:gap-6 mt-4 mb-4 md:mt-8 md:mb-8 mx-auto py-6 w-full px-3 md:px-0 md:w-10/12 ">
           {shout.map((data, index) => {
             return (
               <div className="mb-4 rounded-lg flex justify-center  flex-col space-y-2 px-0 py-6 bg-[#f2f6f6]" key={index}>
@@ -72,15 +72,15 @@ const Testimoni = () => {
                     <Image
                       src={data.img}
                       alt=""
-                      className="rounded-full w-14"
+                      className="rounded-full w-10 md:w-14"
                     />
                   </div>
                   <div className="flex flex-col leading-tight">
-                    <h3 className="text-lg font-bold">{data.name}</h3>
+                    <h3 className="md:text-lg font-bold">{data.name}</h3>
                     <span>{data.location}</span>
                   </div>
                 </div>
-                <div className="flex px-3">
+                <div className="flex px-3 leading-tight">
                   <span className="">{data.testimoni}</span>
                 </div>
               </div>
