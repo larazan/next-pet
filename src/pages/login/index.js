@@ -52,7 +52,7 @@ export default function Login() {
                 <br />
                 New to OnHand?{" "}
                 <Link
-                  href={""}
+                  href={"/register"}
                   className="font-semibold underline text-[#095140]"
                 >
                   Create an account
@@ -99,7 +99,7 @@ export default function Login() {
               </div>
               <div className="py-2 flex justify-end">
                 <Link
-                  href={""}
+                  href={"/forgot"}
                   className="underline text-[#095140] font-semibold"
                 >
                   Forgot Password

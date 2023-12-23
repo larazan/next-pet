@@ -53,7 +53,7 @@ export default function Register() {
                 <br />
                 Already have an account?{" "}
                 <Link
-                  href={""}
+                  href={"/login"}
                   className="font-semibold underline text-[#095140]"
                 >
                   Sign in

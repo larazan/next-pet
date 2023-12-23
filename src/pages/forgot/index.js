@@ -70,10 +70,10 @@ export default function Forgot() {
 
             <div className="py-2 flex justify-start">
                 <Link
-                  href={""}
+                  href={"/login"}
                   className="underline text-[#095140] font-semibold"
                 >
-                  Back to sign in
+                  Back to Log in
                 </Link>
               </div>
           </div>

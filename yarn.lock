@@ -12,7 +12,7 @@
   "resolved" "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz"
   "version" "5.2.0"
 
-"@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0":
+"@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
   "integrity" "sha512-ecjvYlnAaZ/KVneE/OdKYBYfgXV3Ptu6zQWmgEF7vwKhQnvVS6bjMD2XYgj+SNvQ1GfK/pjgokfPkC/2CO8CuA=="
   "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.5.tgz"
   "version" "7.22.5"
@@ -481,7 +481,7 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
-"classnames@^2.2.5":
+"classnames@^2.2.5", "classnames@^2.3.2":
   "integrity" "sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw=="
   "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
   "version" "2.3.2"
@@ -532,6 +532,11 @@
   "resolved" "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz"
   "version" "3.0.0"
 
+"csstype@^3.0.2":
+  "integrity" "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="
+  "resolved" "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz"
+  "version" "3.1.3"
+
 "damerau-levenshtein@^1.0.8":
   "integrity" "sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA=="
   "resolved" "https://registry.npmjs.org/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz"
@@ -543,6 +548,13 @@
   "version" "2.30.0"
   dependencies:
     "@babel/runtime" "^7.21.0"
+
+"debug@^2.6.6":
+  "integrity" "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA=="
+  "resolved" "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
+  "version" "2.6.9"
+  dependencies:
+    "ms" "2.0.0"
 
 "debug@^3.2.7":
   "integrity" "sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ=="
@@ -629,6 +641,14 @@
   "version" "3.0.0"
   dependencies:
     "esutils" "^2.0.2"
+
+"dom-helpers@^5.0.1":
+  "integrity" "sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA=="
+  "resolved" "https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz"
+  "version" "5.2.1"
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    "csstype" "^3.0.2"
 
 "electron-to-chromium@^1.4.431":
   "integrity" "sha512-GpmGRC1vTl60w/k6YpQ18pSiqnmr0j3un//5TV1idPi6aheNfkT1Ye71tMEabWyNDO6sBMgAR+95Eb0eUUr1tA=="
@@ -958,7 +978,7 @@
     "signal-exit" "^3.0.7"
     "strip-final-newline" "^3.0.0"
 
-"fast-deep-equal@^3.1.1", "fast-deep-equal@^3.1.3":
+"fast-deep-equal@^3.1.1", "fast-deep-equal@^3.1.3", "fast-deep-equal@3.1.3":
   "integrity" "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="
   "resolved" "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
   "version" "3.1.3"
@@ -1544,6 +1564,11 @@
   "resolved" "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz"
   "version" "1.2.4"
 
+"load-script@^1.0.0":
+  "integrity" "sha512-kPEjMFtZvwL9TaZo0uZ2ml+Ye9HUMmPwbYRJ324qF9tqMejwykJ5ggTyvzmrbBeapCAbk98BSbTeovHEEP1uCA=="
+  "resolved" "https://registry.npmjs.org/load-script/-/load-script-1.0.0.tgz"
+  "version" "1.0.0"
+
 "locate-path@^6.0.0":
   "integrity" "sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw=="
   "resolved" "https://registry.npmjs.org/locate-path/-/locate-path-6.0.0.tgz"
@@ -1619,6 +1644,11 @@
   "integrity" "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="
   "resolved" "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz"
   "version" "2.1.3"
+
+"ms@2.0.0":
+  "integrity" "sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A=="
+  "resolved" "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz"
+  "version" "2.0.0"
 
 "ms@2.1.2":
   "integrity" "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
@@ -1943,7 +1973,7 @@
   "resolved" "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   "version" "1.2.1"
 
-"prop-types@^15.5.8", "prop-types@^15.7.2", "prop-types@^15.8.1":
+"prop-types@^15.5.8", "prop-types@^15.6.2", "prop-types@^15.7.2", "prop-types@^15.8.1", "prop-types@15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -1962,7 +1992,7 @@
   "resolved" "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   "version" "1.2.3"
 
-"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.2.0", "react-dom@>= 18.0.0", "react-dom@>=16", "react-dom@18.2.0":
+"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0", "react-dom@^18.2.0", "react-dom@>= 18.0.0", "react-dom@>=16", "react-dom@>=16.6.0", "react-dom@18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -2007,12 +2037,37 @@
     "@tweenjs/tween.js" "^18.6.4"
     "resize-observer-polyfill" "^1.5.1"
 
+"react-social-media-embed@^2.4.1":
+  "integrity" "sha512-EqKau5b/ZmHY1uvF+A3HwiE1fluYyQxB6bV5lb6tLYcoTWfhUZ7lhyRihd7aP2nbdIhOPaE5Kr0Bzjz2a8BAdA=="
+  "resolved" "https://registry.npmjs.org/react-social-media-embed/-/react-social-media-embed-2.4.1.tgz"
+  "version" "2.4.1"
+  dependencies:
+    "classnames" "^2.3.2"
+    "react-sub-unsub" "^2.1.6"
+    "react-twitter-embed" "^4.0.4"
+    "react-youtube" "^10.1.0"
+
+"react-sub-unsub@^2.1.6":
+  "integrity" "sha512-FNKy0uD5wSieRE+l5RXaS0bUu6cR8XAXLDwOJnvSDGBMHcWVb1dod8ZkXYjPKtKR74tjYCEpMWcEAWCOoWNXxQ=="
+  "resolved" "https://registry.npmjs.org/react-sub-unsub/-/react-sub-unsub-2.1.11.tgz"
+  "version" "2.1.11"
+
 "react-toastify@^9.1.3":
   "integrity" "sha512-fPfb8ghtn/XMxw3LkxQBk3IyagNpF/LIKjOBflbexr2AWxAH1MJgvnESwEwBn9liLFXgTKWgBSdZpw9m4OTHTg=="
   "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-9.1.3.tgz"
   "version" "9.1.3"
   dependencies:
     "clsx" "^1.1.1"
+
+"react-transition-group@^4.4.5":
+  "integrity" "sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g=="
+  "resolved" "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz"
+  "version" "4.4.5"
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    "dom-helpers" "^5.0.1"
+    "loose-envify" "^1.4.0"
+    "prop-types" "^15.6.2"
 
 "react-tweet-embed@^2.0.0":
   "integrity" "sha512-g2kfPjSRTOKeJtaQF5EMuSTmp/q8I0qdDs/pZ2qLXZjCWExDT/JgjxSlyM65NyNzsz8072PDpvlO/sIXwwVpdQ=="
@@ -2029,7 +2084,23 @@
     "date-fns" "^2.30.0"
     "swr" "^2.2.0"
 
-"react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.11.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>= 18.0.0", "react@>=15", "react@>=16", "react@>=17", "react@18.2.0":
+"react-twitter-embed@^4.0.4":
+  "integrity" "sha512-2JIL7qF+U62zRzpsh6SZDXNI3hRNVYf5vOZ1WRcMvwKouw+xC00PuFaD0aEp2wlyGaZ+f4x2VvX+uDadFQ3HVA=="
+  "resolved" "https://registry.npmjs.org/react-twitter-embed/-/react-twitter-embed-4.0.4.tgz"
+  "version" "4.0.4"
+  dependencies:
+    "scriptjs" "^2.5.9"
+
+"react-youtube@^10.1.0":
+  "integrity" "sha512-ZfGtcVpk0SSZtWCSTYOQKhfx5/1cfyEW1JN/mugGNfAxT3rmVJeMbGpA9+e78yG21ls5nc/5uZJETE3cm3knBg=="
+  "resolved" "https://registry.npmjs.org/react-youtube/-/react-youtube-10.1.0.tgz"
+  "version" "10.1.0"
+  dependencies:
+    "fast-deep-equal" "3.1.3"
+    "prop-types" "15.8.1"
+    "youtube-player" "5.5.2"
+
+"react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0", "react@^16.11.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>= 18.0.0", "react@>=0.14.1", "react@>=15", "react@>=16", "react@>=16.6.0", "react@>=17", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -2139,6 +2210,11 @@
   dependencies:
     "loose-envify" "^1.1.0"
 
+"scriptjs@^2.5.9":
+  "integrity" "sha512-qGVDoreyYiP1pkQnbnFAUIS5AjenNwwQBdl7zeos9etl+hYKWahjRTfzAZZYBv5xNHx7vNKCmaLDQZ6Fr2AEXg=="
+  "resolved" "https://registry.npmjs.org/scriptjs/-/scriptjs-2.5.9.tgz"
+  "version" "2.5.9"
+
 "semver@^6.3.0":
   "integrity" "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="
   "resolved" "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
@@ -2176,6 +2252,11 @@
   "integrity" "sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ=="
   "resolved" "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz"
   "version" "3.0.7"
+
+"sister@^3.0.0":
+  "integrity" "sha512-p19rtTs+NksBRKW9qn0UhZ8/TUI9BPw9lmtHny+Y3TinWlOa9jWh9xB0AtPSdmOy49NJJJSSe0Ey4C7h0TrcYA=="
+  "resolved" "https://registry.npmjs.org/sister/-/sister-3.0.2.tgz"
+  "version" "3.0.2"
 
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
@@ -2527,6 +2608,15 @@
   "integrity" "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q=="
   "resolved" "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz"
   "version" "0.1.0"
+
+"youtube-player@5.5.2":
+  "integrity" "sha512-ZGtsemSpXnDky2AUYWgxjaopgB+shFHgXVpiJFeNB5nWEugpW1KWYDaHKuLqh2b67r24GtP6HoSW5swvf0fFIQ=="
+  "resolved" "https://registry.npmjs.org/youtube-player/-/youtube-player-5.5.2.tgz"
+  "version" "5.5.2"
+  dependencies:
+    "debug" "^2.6.6"
+    "load-script" "^1.0.0"
+    "sister" "^3.0.0"
 
 "zod@3.21.4":
   "integrity" "sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw=="

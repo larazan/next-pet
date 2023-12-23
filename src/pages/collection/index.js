@@ -32,15 +32,13 @@ export default function Collection() {
       <SlideProduct />
       <div className="flex relative z-10 items-center overflow-hidden bg-white">
         <div className="flex justify-between items-center mx-auto pt-3 w-full px-4 md:px-0 md:w-11/12">
-          <div className="rounded-full border-black w-[150px] md:w-[280px] border-2 border-solid hover:shadow-md transform duration-200 hover:scale-105">
+          <div className="rounded border-black  border-2 border-solid hover:shadow-md transform duration-200 hover:scale-105">
             <button
-              className="filter2 place-content-center flex w-full justify-between px-3 items-center py-1 text-black focus:outline-none "
+              className="filter2 place-content-center flex w-full justify-between px-1.5 items-center py-1 text-black focus:outline-none "
               type="button"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <span className="text-black block max-w-[23ch] truncate text-14 font-semibold xs:max-w-none xs:text-16">
-                Filter
-              </span>
+              
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
